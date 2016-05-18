@@ -1,0 +1,1172 @@
+Building a SMALL index
+28160 reads; of these:
+  28160 (100.00%) were paired; of these:
+    0 (0.00%) aligned concordantly 0 times
+    28160 (100.00%) aligned concordantly exactly 1 time
+    0 (0.00%) aligned concordantly >1 times
+    ----
+    0 pairs aligned concordantly 0 times; of these:
+      0 (0.00%) aligned discordantly 1 time
+    ----
+    0 pairs aligned 0 times concordantly or discordantly; of these:
+      0 mates make up the pairs; of these:
+        0 (0.00%) aligned 0 times
+        0 (0.00%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+100.00% overall alignment rate
+
+Successfully created workflow run script.
+To execute the workflow, run the following script and set appropriate options:
+
+/working-dir/quast_test_output_sv/structural_variations/temp_output/reference_manta/runWorkflow.py
+[2016-05-18T22:06:00.344848] [a17821e24a45] [424_1] [WorkflowRunner] Initiating pyFlow run
+[2016-05-18T22:06:00.425173] [a17821e24a45] [424_1] [WorkflowRunner] pyFlowClientWorkflowClass: MantaWorkflow
+[2016-05-18T22:06:00.491794] [a17821e24a45] [424_1] [WorkflowRunner] pyFlowVersion: 1.1.10
+[2016-05-18T22:06:00.558442] [a17821e24a45] [424_1] [WorkflowRunner] pythonVersion: 2.7.6.final.0
+[2016-05-18T22:06:00.633493] [a17821e24a45] [424_1] [WorkflowRunner] WorkingDir: '/working-dir'
+[2016-05-18T22:06:00.700628] [a17821e24a45] [424_1] [WorkflowRunner] ProcessCmdLine: '/working-dir/quast_test_output_sv/structural_variations/temp_output/reference_manta/runWorkflow.py -m local -j 4'
+[2016-05-18T22:06:00.775615] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] mode: local
+[2016-05-18T22:06:00.842218] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] nCores: 4
+[2016-05-18T22:06:00.908861] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] memMb: 24102
+[2016-05-18T22:06:00.975487] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] dataDir: /working-dir/quast_test_output_sv/structural_variations/temp_output/reference_manta/workspace/pyflow.data
+[2016-05-18T22:06:01.047102] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] isDryRun: False
+[2016-05-18T22:06:01.117078] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] isContinue: False
+[2016-05-18T22:06:01.183728] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] isForceContinue: True
+[2016-05-18T22:06:01.255465] [a17821e24a45] [424_1] [WorkflowRunner] [RunParameters] mailTo: ''
+[2016-05-18T22:06:01.326213] [a17821e24a45] [424_1] [TaskRunner:masterWorkflow] Starting task specification for master workflow
+[2016-05-18T22:06:01.400471] [a17821e24a45] [424_1] [MantaWorkflow] Initiating Manta workflow version: 0.29.1
+[2016-05-18T22:06:01.467540] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getAlignmentStats_makeTmpDir' to master workflow
+[2016-05-18T22:06:01.543274] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getAlignmentStats_generateStats_000' to master workflow
+[2016-05-18T22:06:01.617271] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getAlignmentStats_makeTmpDir' from master workflow
+[2016-05-18T22:06:01.683969] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getAlignmentStats_mergeStats' to master workflow
+[2016-05-18T22:06:01.759191] [a17821e24a45] [424_1] [TaskRunner:getAlignmentStats_makeTmpDir] Task initiated on local node
+[2016-05-18T22:06:01.833994] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getAlignmentStats_rmTmpDir' to master workflow
+[2016-05-18T22:06:01.931953] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getAlignmentStats_summarizeStats' to master workflow
+[2016-05-18T22:06:02.031791] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_makeTmpDir' to master workflow
+[2016-05-18T22:06:02.109741] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_makeTmpDir' to master workflow
+[2016-05-18T22:06:02.176000] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getAlignmentStats_makeTmpDir' launched from master workflow
+[2016-05-18T22:06:02.250985] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_estimateChromDepth_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides' to master workflow
+[2016-05-18T22:06:02.326935] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_catChromDepth' to master workflow
+[2016-05-18T22:06:02.401164] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getAlignmentStats_generateStats_000' from master workflow
+[2016-05-18T22:06:02.473320] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_mergeChromDepth' to master workflow
+[2016-05-18T22:06:02.551572] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_makeTmpDir' from master workflow
+[2016-05-18T22:06:02.692923] [a17821e24a45] [424_1] [TaskRunner:getAlignmentStats_generateStats_000] Task initiated on local node
+[2016-05-18T22:06:03.126234] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'getChromDepth_rmTmpDir' to master workflow
+[2016-05-18T22:06:03.257417] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_makeTmpDir] Task initiated on local node
+[2016-05-18T22:06:03.384291] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'makeTmpDir' to master workflow
+[2016-05-18T22:06:03.460709] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides_0000' to master workflow
+[2016-05-18T22:06:03.542770] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getAlignmentStats_generateStats_000' launched from master workflow
+[2016-05-18T22:06:03.615583] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'mergeLocusGraph' to master workflow
+[2016-05-18T22:06:03.682302] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_makeTmpDir' launched from master workflow
+[2016-05-18T22:06:03.749389] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'checkLocusGraph' to master workflow
+[2016-05-18T22:06:03.818867] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'rmTmpDir' to master workflow
+[2016-05-18T22:06:03.901405] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getAlignmentStats_mergeStats' from master workflow
+[2016-05-18T22:06:03.968029] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'locusGraphStats' to master workflow
+[2016-05-18T22:06:04.051421] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_sample000_makeTmpDir' from master workflow
+[2016-05-18T22:06:04.126481] [a17821e24a45] [424_1] [TaskRunner:getAlignmentStats_mergeStats] Task initiated on local node
+[2016-05-18T22:06:04.243183] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'makeHyGenDir' to master workflow
+[2016-05-18T22:06:04.624918] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_sample000_makeTmpDir] Task initiated on local node
+[2016-05-18T22:06:04.742889] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0000' to master workflow
+[2016-05-18T22:06:04.852051] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0001' to master workflow
+[2016-05-18T22:06:05.476238] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getAlignmentStats_mergeStats' launched from master workflow
+[2016-05-18T22:06:05.559551] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0002' to master workflow
+[2016-05-18T22:06:05.626249] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_sample000_makeTmpDir' launched from master workflow
+[2016-05-18T22:06:05.692930] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0003' to master workflow
+[2016-05-18T22:06:05.842909] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0004' to master workflow
+[2016-05-18T22:06:05.976296] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_sample000_estimateChromDepth_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides' from master workflow
+[2016-05-18T22:06:06.108718] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0005' to master workflow
+[2016-05-18T22:06:07.884159] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getAlignmentStats_rmTmpDir' from master workflow
+[2016-05-18T22:06:07.950525] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_sample000_estimateChromDepth_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides] Task initiated on local node
+[2016-05-18T22:06:08.067335] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0006' to master workflow
+[2016-05-18T22:06:08.251345] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getAlignmentStats_summarizeStats' from master workflow
+[2016-05-18T22:06:08.484622] [a17821e24a45] [424_1] [TaskRunner:getAlignmentStats_rmTmpDir] Task initiated on local node
+[2016-05-18T22:06:08.626258] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0007' to master workflow
+[2016-05-18T22:06:08.743385] [a17821e24a45] [424_1] [TaskRunner:getAlignmentStats_summarizeStats] Task initiated on local node
+[2016-05-18T22:06:08.851405] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0008' to master workflow
+[2016-05-18T22:06:08.926432] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_sample000_estimateChromDepth_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides' launched from master workflow
+[2016-05-18T22:06:08.993138] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0009' to master workflow
+[2016-05-18T22:06:09.060050] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getAlignmentStats_rmTmpDir' launched from master workflow
+[2016-05-18T22:06:09.126616] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0010' to master workflow
+[2016-05-18T22:06:09.202008] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getAlignmentStats_summarizeStats' launched from master workflow
+[2016-05-18T22:06:09.269118] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0011' to master workflow
+[2016-05-18T22:06:09.336435] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0012' to master workflow
+[2016-05-18T22:06:09.410475] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_sample000_catChromDepth' from master workflow
+[2016-05-18T22:06:09.492577] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0013' to master workflow
+[2016-05-18T22:06:09.951605] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_sample000_catChromDepth] Task initiated on local node
+[2016-05-18T22:06:10.027390] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0014' to master workflow
+[2016-05-18T22:06:12.353986] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0015' to master workflow
+[2016-05-18T22:06:12.435950] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_sample000_catChromDepth' launched from master workflow
+[2016-05-18T22:06:12.517033] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0016' to master workflow
+[2016-05-18T22:06:12.584380] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0017' to master workflow
+[2016-05-18T22:06:12.658390] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_mergeChromDepth' from master workflow
+[2016-05-18T22:06:12.733184] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0018' to master workflow
+[2016-05-18T22:06:12.828220] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_mergeChromDepth] Task initiated on local node
+[2016-05-18T22:06:13.008226] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0019' to master workflow
+[2016-05-18T22:06:13.101546] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0020' to master workflow
+[2016-05-18T22:06:13.176720] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0021' to master workflow
+[2016-05-18T22:06:13.250982] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_mergeChromDepth' launched from master workflow
+[2016-05-18T22:06:13.329084] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0022' to master workflow
+[2016-05-18T22:06:13.401957] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0023' to master workflow
+[2016-05-18T22:06:13.484341] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'makeTmpDir' from master workflow
+[2016-05-18T22:06:13.550905] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0024' to master workflow
+[2016-05-18T22:06:13.626403] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'getChromDepth_rmTmpDir' from master workflow
+[2016-05-18T22:06:13.720392] [a17821e24a45] [424_1] [TaskRunner:makeTmpDir] Task initiated on local node
+[2016-05-18T22:06:13.854110] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0025' to master workflow
+[2016-05-18T22:06:13.976488] [a17821e24a45] [424_1] [TaskRunner:getChromDepth_rmTmpDir] Task initiated on local node
+[2016-05-18T22:06:14.079026] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0026' to master workflow
+[2016-05-18T22:06:14.202421] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0027' to master workflow
+[2016-05-18T22:06:14.284847] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'makeTmpDir' launched from master workflow
+[2016-05-18T22:06:14.351142] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0028' to master workflow
+[2016-05-18T22:06:14.418097] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'getChromDepth_rmTmpDir' launched from master workflow
+[2016-05-18T22:06:14.485450] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0029' to master workflow
+[2016-05-18T22:06:14.552634] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0030' to master workflow
+[2016-05-18T22:06:14.626497] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides_0000' from master workflow
+[2016-05-18T22:06:14.693003] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0031' to master workflow
+[2016-05-18T22:06:14.777029] [a17821e24a45] [424_1] [TaskRunner:makeLocusGraph_chromId_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides_0000] Task initiated on local node
+[2016-05-18T22:06:14.859723] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0032' to master workflow
+[2016-05-18T22:06:14.927491] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0033' to master workflow
+[2016-05-18T22:06:15.002616] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0034' to master workflow
+[2016-05-18T22:06:15.097709] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0035' to master workflow
+[2016-05-18T22:06:15.169843] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0036' to master workflow
+[2016-05-18T22:06:15.260282] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_gi_49175990_ref_NC_000913_2__Escherichia_coli_str__K-12_substr__MG1655__complete_genome__cropped_to_first_10000_nucleotides_0000' launched from master workflow
+[2016-05-18T22:06:15.335875] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0037' to master workflow
+[2016-05-18T22:06:15.403221] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0038' to master workflow
+[2016-05-18T22:06:15.477094] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'mergeLocusGraph' from master workflow
+[2016-05-18T22:06:15.572186] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0039' to master workflow
+[2016-05-18T22:06:15.714079] [a17821e24a45] [424_1] [TaskRunner:mergeLocusGraph] Task initiated on local node
+[2016-05-18T22:06:15.880731] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0040' to master workflow
+[2016-05-18T22:06:16.036463] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0041' to master workflow
+[2016-05-18T22:06:16.103311] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0042' to master workflow
+[2016-05-18T22:06:16.202256] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'mergeLocusGraph' launched from master workflow
+[2016-05-18T22:06:16.269761] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0043' to master workflow
+[2016-05-18T22:06:16.336843] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0044' to master workflow
+[2016-05-18T22:06:16.410629] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'rmTmpDir' from master workflow
+[2016-05-18T22:06:16.477115] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0045' to master workflow
+[2016-05-18T22:06:16.594282] [a17821e24a45] [424_1] [TaskRunner:rmTmpDir] Task initiated on local node
+[2016-05-18T22:06:16.727480] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'checkLocusGraph' from master workflow
+[2016-05-18T22:06:16.831901] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0046' to master workflow
+[2016-05-18T22:06:16.977655] [a17821e24a45] [424_1] [TaskRunner:checkLocusGraph] Task initiated on local node
+[2016-05-18T22:06:17.090090] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'locusGraphStats' from master workflow
+[2016-05-18T22:06:17.219063] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0047' to master workflow
+[2016-05-18T22:06:17.307636] [a17821e24a45] [424_1] [TaskRunner:locusGraphStats] Task initiated on local node
+[2016-05-18T22:06:17.406975] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0048' to master workflow
+[2016-05-18T22:06:17.490656] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'rmTmpDir' launched from master workflow
+[2016-05-18T22:06:17.569258] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0049' to master workflow
+[2016-05-18T22:06:17.674156] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'checkLocusGraph' launched from master workflow
+[2016-05-18T22:06:17.765536] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0050' to master workflow
+[2016-05-18T22:06:17.865789] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'locusGraphStats' launched from master workflow
+[2016-05-18T22:06:17.983642] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0051' to master workflow
+[2016-05-18T22:06:18.092263] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0052' to master workflow
+[2016-05-18T22:06:18.177998] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'makeHyGenDir' from master workflow
+[2016-05-18T22:06:18.282501] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0053' to master workflow
+[2016-05-18T22:06:18.403487] [a17821e24a45] [424_1] [TaskRunner:makeHyGenDir] Task initiated on local node
+[2016-05-18T22:06:18.508124] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0054' to master workflow
+[2016-05-18T22:06:18.620809] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0055' to master workflow
+[2016-05-18T22:06:18.709434] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0056' to master workflow
+[2016-05-18T22:06:18.803075] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'makeHyGenDir' launched from master workflow
+[2016-05-18T22:06:18.887732] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0057' to master workflow
+[2016-05-18T22:06:18.971313] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0058' to master workflow
+[2016-05-18T22:06:19.061535] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0022' from master workflow
+[2016-05-18T22:06:19.128301] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0059' to master workflow
+[2016-05-18T22:06:19.211835] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0022] Task initiated on local node
+[2016-05-18T22:06:19.342323] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0044' from master workflow
+[2016-05-18T22:06:19.442253] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0060' to master workflow
+[2016-05-18T22:06:19.534267] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0044] Task initiated on local node
+[2016-05-18T22:06:19.620105] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0023' from master workflow
+[2016-05-18T22:06:19.720085] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0061' to master workflow
+[2016-05-18T22:06:19.820535] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0023] Task initiated on local node
+[2016-05-18T22:06:19.928545] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0015' from master workflow
+[2016-05-18T22:06:20.028560] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0062' to master workflow
+[2016-05-18T22:06:20.129177] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0015] Task initiated on local node
+[2016-05-18T22:06:20.318124] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0063' to master workflow
+[2016-05-18T22:06:20.437728] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0022' launched from master workflow
+[2016-05-18T22:06:20.504363] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0064' to master workflow
+[2016-05-18T22:06:20.576753] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0044' launched from master workflow
+[2016-05-18T22:06:20.646092] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0065' to master workflow
+[2016-05-18T22:06:20.712923] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0023' launched from master workflow
+[2016-05-18T22:06:20.912868] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0066' to master workflow
+[2016-05-18T22:06:21.047655] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0067' to master workflow
+[2016-05-18T22:06:21.146296] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0034' from master workflow
+[2016-05-18T22:06:21.212883] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0068' to master workflow
+[2016-05-18T22:06:21.296567] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0034] Task initiated on local node
+[2016-05-18T22:06:21.379621] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0040' from master workflow
+[2016-05-18T22:06:21.488038] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0069' to master workflow
+[2016-05-18T22:06:21.602799] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0040] Task initiated on local node
+[2016-05-18T22:06:21.729728] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0054' from master workflow
+[2016-05-18T22:06:21.846460] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0070' to master workflow
+[2016-05-18T22:06:21.938473] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0054] Task initiated on local node
+[2016-05-18T22:06:22.013159] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0071' to master workflow
+[2016-05-18T22:06:22.096622] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0015' launched from master workflow
+[2016-05-18T22:06:22.179987] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0072' to master workflow
+[2016-05-18T22:06:22.246777] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0034' launched from master workflow
+[2016-05-18T22:06:22.313369] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0073' to master workflow
+[2016-05-18T22:06:22.380208] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0040' launched from master workflow
+[2016-05-18T22:06:22.446798] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0074' to master workflow
+[2016-05-18T22:06:22.513607] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0054' launched from master workflow
+[2016-05-18T22:06:22.581996] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0075' to master workflow
+[2016-05-18T22:06:22.656766] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0076' to master workflow
+[2016-05-18T22:06:22.738672] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0064' from master workflow
+[2016-05-18T22:06:22.805380] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0077' to master workflow
+[2016-05-18T22:06:22.889051] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0064] Task initiated on local node
+[2016-05-18T22:06:23.012132] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0029' from master workflow
+[2016-05-18T22:06:23.163793] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0078' to master workflow
+[2016-05-18T22:06:23.255839] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0029] Task initiated on local node
+[2016-05-18T22:06:23.330550] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0074' from master workflow
+[2016-05-18T22:06:23.430659] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0079' to master workflow
+[2016-05-18T22:06:23.539465] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0074] Task initiated on local node
+[2016-05-18T22:06:23.639104] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0016' from master workflow
+[2016-05-18T22:06:23.722432] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0080' to master workflow
+[2016-05-18T22:06:23.797809] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0016] Task initiated on local node
+[2016-05-18T22:06:23.872618] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0081' to master workflow
+[2016-05-18T22:06:23.956066] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0064' launched from master workflow
+[2016-05-18T22:06:24.039421] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0082' to master workflow
+[2016-05-18T22:06:24.097786] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0016' launched from master workflow
+[2016-05-18T22:06:24.156192] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0083' to master workflow
+[2016-05-18T22:06:24.214671] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0074' launched from master workflow
+[2016-05-18T22:06:24.264608] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0084' to master workflow
+[2016-05-18T22:06:24.323005] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0029' launched from master workflow
+[2016-05-18T22:06:24.375080] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0085' to master workflow
+[2016-05-18T22:06:24.441260] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0086' to master workflow
+[2016-05-18T22:06:24.523192] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0039' from master workflow
+[2016-05-18T22:06:24.580592] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0087' to master workflow
+[2016-05-18T22:06:24.665230] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0039] Task initiated on local node
+[2016-05-18T22:06:24.773348] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0042' from master workflow
+[2016-05-18T22:06:24.873390] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0088' to master workflow
+[2016-05-18T22:06:24.981855] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0042] Task initiated on local node
+[2016-05-18T22:06:25.081032] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0038' from master workflow
+[2016-05-18T22:06:25.165255] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0089' to master workflow
+[2016-05-18T22:06:25.265516] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0038] Task initiated on local node
+[2016-05-18T22:06:25.348628] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0035' from master workflow
+[2016-05-18T22:06:25.448750] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0090' to master workflow
+[2016-05-18T22:06:25.565684] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0035] Task initiated on local node
+[2016-05-18T22:06:25.648774] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0091' to master workflow
+[2016-05-18T22:06:25.748989] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0042' launched from master workflow
+[2016-05-18T22:06:25.823884] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0092' to master workflow
+[2016-05-18T22:06:25.890684] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0035' launched from master workflow
+[2016-05-18T22:06:25.957402] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0093' to master workflow
+[2016-05-18T22:06:26.024250] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0039' launched from master workflow
+[2016-05-18T22:06:26.090774] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0094' to master workflow
+[2016-05-18T22:06:26.157634] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0038' launched from master workflow
+[2016-05-18T22:06:26.226389] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0095' to master workflow
+[2016-05-18T22:06:26.292610] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0096' to master workflow
+[2016-05-18T22:06:26.357751] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0083' from master workflow
+[2016-05-18T22:06:26.424437] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0097' to master workflow
+[2016-05-18T22:06:26.541641] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0083] Task initiated on local node
+[2016-05-18T22:06:26.700079] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0041' from master workflow
+[2016-05-18T22:06:26.833391] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0098' to master workflow
+[2016-05-18T22:06:26.917236] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0041] Task initiated on local node
+[2016-05-18T22:06:27.000077] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0085' from master workflow
+[2016-05-18T22:06:27.100202] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0099' to master workflow
+[2016-05-18T22:06:27.267356] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0085] Task initiated on local node
+[2016-05-18T22:06:27.342103] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0019' from master workflow
+[2016-05-18T22:06:27.408886] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0100' to master workflow
+[2016-05-18T22:06:27.525712] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0019] Task initiated on local node
+[2016-05-18T22:06:27.650749] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0101' to master workflow
+[2016-05-18T22:06:27.750805] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0083' launched from master workflow
+[2016-05-18T22:06:27.834162] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0102' to master workflow
+[2016-05-18T22:06:27.900998] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0019' launched from master workflow
+[2016-05-18T22:06:27.967373] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0103' to master workflow
+[2016-05-18T22:06:28.034433] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0041' launched from master workflow
+[2016-05-18T22:06:28.103525] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0104' to master workflow
+[2016-05-18T22:06:28.169127] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0105' to master workflow
+[2016-05-18T22:06:28.242614] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0099' from master workflow
+[2016-05-18T22:06:28.309648] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0106' to master workflow
+[2016-05-18T22:06:28.410160] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0099] Task initiated on local node
+[2016-05-18T22:06:28.501410] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0097' from master workflow
+[2016-05-18T22:06:28.609363] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0107' to master workflow
+[2016-05-18T22:06:28.735366] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0097] Task initiated on local node
+[2016-05-18T22:06:28.860101] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0096' from master workflow
+[2016-05-18T22:06:28.943575] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0108' to master workflow
+[2016-05-18T22:06:29.051714] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0096] Task initiated on local node
+[2016-05-18T22:06:29.168718] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0109' to master workflow
+[2016-05-18T22:06:29.243119] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0085' launched from master workflow
+[2016-05-18T22:06:29.335611] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0110' to master workflow
+[2016-05-18T22:06:29.401621] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0097' launched from master workflow
+[2016-05-18T22:06:29.476472] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0111' to master workflow
+[2016-05-18T22:06:29.543316] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0096' launched from master workflow
+[2016-05-18T22:06:29.609967] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0112' to master workflow
+[2016-05-18T22:06:29.676759] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0099' launched from master workflow
+[2016-05-18T22:06:29.745770] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0113' to master workflow
+[2016-05-18T22:06:29.820110] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0114' to master workflow
+[2016-05-18T22:06:29.901974] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0077' from master workflow
+[2016-05-18T22:06:29.968515] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0115' to master workflow
+[2016-05-18T22:06:30.043853] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0077] Task initiated on local node
+[2016-05-18T22:06:30.143692] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0013' from master workflow
+[2016-05-18T22:06:30.236643] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0116' to master workflow
+[2016-05-18T22:06:30.360923] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0013] Task initiated on local node
+[2016-05-18T22:06:30.477292] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0075' from master workflow
+[2016-05-18T22:06:30.585474] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0117' to master workflow
+[2016-05-18T22:06:30.710889] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0075] Task initiated on local node
+[2016-05-18T22:06:30.812153] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0093' from master workflow
+[2016-05-18T22:06:30.912131] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0118' to master workflow
+[2016-05-18T22:06:30.995920] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0093] Task initiated on local node
+[2016-05-18T22:06:31.087293] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0119' to master workflow
+[2016-05-18T22:06:31.179333] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0075' launched from master workflow
+[2016-05-18T22:06:31.270966] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0120' to master workflow
+[2016-05-18T22:06:31.337755] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0093' launched from master workflow
+[2016-05-18T22:06:31.404391] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0121' to master workflow
+[2016-05-18T22:06:31.471241] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0077' launched from master workflow
+[2016-05-18T22:06:31.537901] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0122' to master workflow
+[2016-05-18T22:06:31.613027] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0013' launched from master workflow
+[2016-05-18T22:06:31.682503] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0123' to master workflow
+[2016-05-18T22:06:31.748422] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0124' to master workflow
+[2016-05-18T22:06:31.821637] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0006' from master workflow
+[2016-05-18T22:06:31.888212] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0125' to master workflow
+[2016-05-18T22:06:31.955385] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0006] Task initiated on local node
+[2016-05-18T22:06:32.038447] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0065' from master workflow
+[2016-05-18T22:06:32.130140] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0126' to master workflow
+[2016-05-18T22:06:32.230699] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0065] Task initiated on local node
+[2016-05-18T22:06:32.319967] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0105' from master workflow
+[2016-05-18T22:06:32.438863] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0127' to master workflow
+[2016-05-18T22:06:32.614473] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0105] Task initiated on local node
+[2016-05-18T22:06:32.711877] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0067' from master workflow
+[2016-05-18T22:06:32.811870] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0128' to master workflow
+[2016-05-18T22:06:32.889494] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0067] Task initiated on local node
+[2016-05-18T22:06:33.354004] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0129' to master workflow
+[2016-05-18T22:06:33.456670] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0105' launched from master workflow
+[2016-05-18T22:06:33.540034] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0130' to master workflow
+[2016-05-18T22:06:33.606701] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0065' launched from master workflow
+[2016-05-18T22:06:33.681852] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0131' to master workflow
+[2016-05-18T22:06:33.748514] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0067' launched from master workflow
+[2016-05-18T22:06:33.815275] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0132' to master workflow
+[2016-05-18T22:06:33.882101] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0006' launched from master workflow
+[2016-05-18T22:06:33.948851] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0133' to master workflow
+[2016-05-18T22:06:34.017428] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0134' to master workflow
+[2016-05-18T22:06:34.096261] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0025' from master workflow
+[2016-05-18T22:06:34.162875] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0135' to master workflow
+[2016-05-18T22:06:34.238226] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0025] Task initiated on local node
+[2016-05-18T22:06:34.337976] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0131' from master workflow
+[2016-05-18T22:06:34.429633] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0136' to master workflow
+[2016-05-18T22:06:34.563266] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0131] Task initiated on local node
+[2016-05-18T22:06:34.679786] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0050' from master workflow
+[2016-05-18T22:06:34.788048] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0137' to master workflow
+[2016-05-18T22:06:34.888354] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0050] Task initiated on local node
+[2016-05-18T22:06:34.979784] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0062' from master workflow
+[2016-05-18T22:06:35.104814] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0138' to master workflow
+[2016-05-18T22:06:35.230125] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0062] Task initiated on local node
+[2016-05-18T22:06:35.329859] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0139' to master workflow
+[2016-05-18T22:06:35.413354] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0131' launched from master workflow
+[2016-05-18T22:06:35.496655] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0140' to master workflow
+[2016-05-18T22:06:35.588399] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0062' launched from master workflow
+[2016-05-18T22:06:35.671688] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0141' to master workflow
+[2016-05-18T22:06:35.767056] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0050' launched from master workflow
+[2016-05-18T22:06:35.875314] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0142' to master workflow
+[2016-05-18T22:06:35.963539] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0025' launched from master workflow
+[2016-05-18T22:06:36.050865] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0143' to master workflow
+[2016-05-18T22:06:36.132123] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0144' to master workflow
+[2016-05-18T22:06:36.205285] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0135' from master workflow
+[2016-05-18T22:06:36.280193] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0145' to master workflow
+[2016-05-18T22:06:36.351053] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0135] Task initiated on local node
+[2016-05-18T22:06:36.438636] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0098' from master workflow
+[2016-05-18T22:06:36.555386] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0146' to master workflow
+[2016-05-18T22:06:36.713798] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0098] Task initiated on local node
+[2016-05-18T22:06:36.817702] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0126' from master workflow
+[2016-05-18T22:06:36.923297] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0147' to master workflow
+[2016-05-18T22:06:37.030607] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0126] Task initiated on local node
+[2016-05-18T22:06:37.122251] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0069' from master workflow
+[2016-05-18T22:06:37.213997] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0148' to master workflow
+[2016-05-18T22:06:37.297597] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0069] Task initiated on local node
+[2016-05-18T22:06:37.372435] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0149' to master workflow
+[2016-05-18T22:06:37.455727] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0135' launched from master workflow
+[2016-05-18T22:06:37.539151] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0150' to master workflow
+[2016-05-18T22:06:37.610135] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0126' launched from master workflow
+[2016-05-18T22:06:37.697516] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0151' to master workflow
+[2016-05-18T22:06:37.764278] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0098' launched from master workflow
+[2016-05-18T22:06:37.830933] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0152' to master workflow
+[2016-05-18T22:06:37.906032] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0069' launched from master workflow
+[2016-05-18T22:06:37.977315] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0153' to master workflow
+[2016-05-18T22:06:38.045992] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0154' to master workflow
+[2016-05-18T22:06:38.119067] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0149' from master workflow
+[2016-05-18T22:06:38.186094] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0155' to master workflow
+[2016-05-18T22:06:38.252847] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0149] Task initiated on local node
+[2016-05-18T22:06:38.344262] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0146' from master workflow
+[2016-05-18T22:06:38.439787] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0156' to master workflow
+[2016-05-18T22:06:38.539900] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0146] Task initiated on local node
+[2016-05-18T22:06:38.639794] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0109' from master workflow
+[2016-05-18T22:06:38.723215] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0157' to master workflow
+[2016-05-18T22:06:38.857028] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0109] Task initiated on local node
+[2016-05-18T22:06:38.956623] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0134' from master workflow
+[2016-05-18T22:06:39.061606] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0158' to master workflow
+[2016-05-18T22:06:39.157031] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0134] Task initiated on local node
+[2016-05-18T22:06:39.240022] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0159' to master workflow
+[2016-05-18T22:06:39.357119] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0149' launched from master workflow
+[2016-05-18T22:06:39.431775] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0160' to master workflow
+[2016-05-18T22:06:39.498585] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0109' launched from master workflow
+[2016-05-18T22:06:39.565187] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0161' to master workflow
+[2016-05-18T22:06:39.637227] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0134' launched from master workflow
+[2016-05-18T22:06:39.698589] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0162' to master workflow
+[2016-05-18T22:06:39.765467] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0146' launched from master workflow
+[2016-05-18T22:06:39.835578] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0163' to master workflow
+[2016-05-18T22:06:39.900946] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0164' to master workflow
+[2016-05-18T22:06:39.982184] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0151' from master workflow
+[2016-05-18T22:06:40.049341] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0165' to master workflow
+[2016-05-18T22:06:40.133002] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0151] Task initiated on local node
+[2016-05-18T22:06:40.207956] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0012' from master workflow
+[2016-05-18T22:06:40.307975] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0166' to master workflow
+[2016-05-18T22:06:40.475135] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0012] Task initiated on local node
+[2016-05-18T22:06:40.583169] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0058' from master workflow
+[2016-05-18T22:06:40.699886] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0167' to master workflow
+[2016-05-18T22:06:40.800301] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0058] Task initiated on local node
+[2016-05-18T22:06:40.891625] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0132' from master workflow
+[2016-05-18T22:06:41.008316] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0168' to master workflow
+[2016-05-18T22:06:41.116972] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0132] Task initiated on local node
+[2016-05-18T22:06:41.216708] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0169' to master workflow
+[2016-05-18T22:06:41.291913] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0012' launched from master workflow
+[2016-05-18T22:06:41.358496] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0170' to master workflow
+[2016-05-18T22:06:41.425288] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0058' launched from master workflow
+[2016-05-18T22:06:41.491926] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0171' to master workflow
+[2016-05-18T22:06:41.558638] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0132' launched from master workflow
+[2016-05-18T22:06:41.625318] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0172' to master workflow
+[2016-05-18T22:06:41.692101] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0151' launched from master workflow
+[2016-05-18T22:06:41.789743] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0173' to master workflow
+[2016-05-18T22:06:41.875512] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0174' to master workflow
+[2016-05-18T22:06:41.950699] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0113' from master workflow
+[2016-05-18T22:06:42.017250] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0175' to master workflow
+[2016-05-18T22:06:42.092604] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0113] Task initiated on local node
+[2016-05-18T22:06:42.200715] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0164' from master workflow
+[2016-05-18T22:06:42.309080] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0176' to master workflow
+[2016-05-18T22:06:42.442824] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0164] Task initiated on local node
+[2016-05-18T22:06:42.557132] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0094' from master workflow
+[2016-05-18T22:06:42.673781] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0177' to master workflow
+[2016-05-18T22:06:42.776307] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0094] Task initiated on local node
+[2016-05-18T22:06:42.867676] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0004' from master workflow
+[2016-05-18T22:06:42.959298] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0178' to master workflow
+[2016-05-18T22:06:43.051328] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0004] Task initiated on local node
+[2016-05-18T22:06:43.126168] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0179' to master workflow
+[2016-05-18T22:06:43.209573] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0113' launched from master workflow
+[2016-05-18T22:06:43.301330] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0180' to master workflow
+[2016-05-18T22:06:43.368032] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0094' launched from master workflow
+[2016-05-18T22:06:43.434665] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0181' to master workflow
+[2016-05-18T22:06:43.501476] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0004' launched from master workflow
+[2016-05-18T22:06:43.568100] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0182' to master workflow
+[2016-05-18T22:06:43.634890] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0164' launched from master workflow
+[2016-05-18T22:06:43.714155] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0183' to master workflow
+[2016-05-18T22:06:43.795558] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0184' to master workflow
+[2016-05-18T22:06:43.876652] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0173' from master workflow
+[2016-05-18T22:06:43.943389] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0185' to master workflow
+[2016-05-18T22:06:44.010342] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0173] Task initiated on local node
+[2016-05-18T22:06:44.085125] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0181' from master workflow
+[2016-05-18T22:06:44.176879] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0186' to master workflow
+[2016-05-18T22:06:44.277301] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0181] Task initiated on local node
+[2016-05-18T22:06:44.392331] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0114' from master workflow
+[2016-05-18T22:06:44.501973] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0187' to master workflow
+[2016-05-18T22:06:44.594142] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0114] Task initiated on local node
+[2016-05-18T22:06:44.710458] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0182' from master workflow
+[2016-05-18T22:06:44.802145] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0188' to master workflow
+[2016-05-18T22:06:44.885855] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0182] Task initiated on local node
+[2016-05-18T22:06:44.969042] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0189' to master workflow
+[2016-05-18T22:06:45.052535] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0173' launched from master workflow
+[2016-05-18T22:06:45.135735] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0190' to master workflow
+[2016-05-18T22:06:45.202582] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0114' launched from master workflow
+[2016-05-18T22:06:45.269156] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0191' to master workflow
+[2016-05-18T22:06:45.336007] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0181' launched from master workflow
+[2016-05-18T22:06:45.406703] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0192' to master workflow
+[2016-05-18T22:06:45.471595] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0193' to master workflow
+[2016-05-18T22:06:45.544364] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0103' from master workflow
+[2016-05-18T22:06:45.611113] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0194' to master workflow
+[2016-05-18T22:06:45.678041] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0103] Task initiated on local node
+[2016-05-18T22:06:45.769550] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0176' from master workflow
+[2016-05-18T22:06:45.869600] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0195' to master workflow
+[2016-05-18T22:06:45.986650] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0176] Task initiated on local node
+[2016-05-18T22:06:46.103042] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0191' from master workflow
+[2016-05-18T22:06:46.219725] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0196' to master workflow
+[2016-05-18T22:06:46.378394] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0191] Task initiated on local node
+[2016-05-18T22:06:46.487064] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0197' to master workflow
+[2016-05-18T22:06:46.578868] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0182' launched from master workflow
+[2016-05-18T22:06:46.645571] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0198' to master workflow
+[2016-05-18T22:06:46.712290] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0191' launched from master workflow
+[2016-05-18T22:06:47.012376] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0199' to master workflow
+[2016-05-18T22:06:47.079113] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0103' launched from master workflow
+[2016-05-18T22:06:47.145744] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0200' to master workflow
+[2016-05-18T22:06:47.212536] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0176' launched from master workflow
+[2016-05-18T22:06:47.283431] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0201' to master workflow
+[2016-05-18T22:06:47.356665] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0202' to master workflow
+[2016-05-18T22:06:47.429260] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0196' from master workflow
+[2016-05-18T22:06:47.495933] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0203' to master workflow
+[2016-05-18T22:06:47.579300] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0196] Task initiated on local node
+[2016-05-18T22:06:47.687231] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0200' from master workflow
+[2016-05-18T22:06:47.778972] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0204' to master workflow
+[2016-05-18T22:06:47.871485] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0200] Task initiated on local node
+[2016-05-18T22:06:47.962945] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0186' from master workflow
+[2016-05-18T22:06:48.087917] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0205' to master workflow
+[2016-05-18T22:06:48.188442] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0186] Task initiated on local node
+[2016-05-18T22:06:48.305133] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0185' from master workflow
+[2016-05-18T22:06:48.413538] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0206' to master workflow
+[2016-05-18T22:06:48.564067] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0185] Task initiated on local node
+[2016-05-18T22:06:48.663629] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0207' to master workflow
+[2016-05-18T22:06:48.772043] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0200' launched from master workflow
+[2016-05-18T22:06:48.855465] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0208' to master workflow
+[2016-05-18T22:06:48.922228] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0196' launched from master workflow
+[2016-05-18T22:06:48.988904] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0209' to master workflow
+[2016-05-18T22:06:49.055641] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0186' launched from master workflow
+[2016-05-18T22:06:49.122388] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0210' to master workflow
+[2016-05-18T22:06:49.196966] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0185' launched from master workflow
+[2016-05-18T22:06:49.265865] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0211' to master workflow
+[2016-05-18T22:06:49.341067] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0212' to master workflow
+[2016-05-18T22:06:49.413676] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0201' from master workflow
+[2016-05-18T22:06:49.480414] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0213' to master workflow
+[2016-05-18T22:06:49.564780] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0201] Task initiated on local node
+[2016-05-18T22:06:49.647934] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0207' from master workflow
+[2016-05-18T22:06:49.731308] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0214' to master workflow
+[2016-05-18T22:06:49.839217] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0207] Task initiated on local node
+[2016-05-18T22:06:49.931500] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0189' from master workflow
+[2016-05-18T22:06:50.014942] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0215' to master workflow
+[2016-05-18T22:06:50.122798] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0189] Task initiated on local node
+[2016-05-18T22:06:50.264152] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0166' from master workflow
+[2016-05-18T22:06:50.365225] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0216' to master workflow
+[2016-05-18T22:06:50.464615] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0166] Task initiated on local node
+[2016-05-18T22:06:50.589226] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0217' to master workflow
+[2016-05-18T22:06:50.689289] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0189' launched from master workflow
+[2016-05-18T22:06:50.765683] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0218' to master workflow
+[2016-05-18T22:06:50.832433] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0207' launched from master workflow
+[2016-05-18T22:06:50.899128] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0219' to master workflow
+[2016-05-18T22:06:50.965951] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0166' launched from master workflow
+[2016-05-18T22:06:51.032594] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0220' to master workflow
+[2016-05-18T22:06:51.099348] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0201' launched from master workflow
+[2016-05-18T22:06:51.170791] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0221' to master workflow
+[2016-05-18T22:06:51.243664] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0222' to master workflow
+[2016-05-18T22:06:51.324512] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0216' from master workflow
+[2016-05-18T22:06:51.391296] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0223' to master workflow
+[2016-05-18T22:06:51.466621] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0216] Task initiated on local node
+[2016-05-18T22:06:51.556550] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0202' from master workflow
+[2016-05-18T22:06:51.656566] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0224' to master workflow
+[2016-05-18T22:06:51.750245] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0202] Task initiated on local node
+[2016-05-18T22:06:51.900333] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0178' from master workflow
+[2016-05-18T22:06:52.000408] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0225' to master workflow
+[2016-05-18T22:06:52.084127] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0178] Task initiated on local node
+[2016-05-18T22:06:52.175568] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0014' from master workflow
+[2016-05-18T22:06:52.292402] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0226' to master workflow
+[2016-05-18T22:06:52.434412] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0014] Task initiated on local node
+[2016-05-18T22:06:52.559298] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0227' to master workflow
+[2016-05-18T22:06:52.657498] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0202' launched from master workflow
+[2016-05-18T22:06:52.757416] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0228' to master workflow
+[2016-05-18T22:06:52.824716] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0216' launched from master workflow
+[2016-05-18T22:06:52.891424] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0229' to master workflow
+[2016-05-18T22:06:52.958117] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0014' launched from master workflow
+[2016-05-18T22:06:53.024795] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0230' to master workflow
+[2016-05-18T22:06:53.091787] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0178' launched from master workflow
+[2016-05-18T22:06:53.158865] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0231' to master workflow
+[2016-05-18T22:06:53.235855] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0232' to master workflow
+[2016-05-18T22:06:53.308173] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0222' from master workflow
+[2016-05-18T22:06:53.375052] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0233' to master workflow
+[2016-05-18T22:06:53.460413] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0222] Task initiated on local node
+[2016-05-18T22:06:53.535267] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0124' from master workflow
+[2016-05-18T22:06:53.618705] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0234' to master workflow
+[2016-05-18T22:06:53.700577] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0124] Task initiated on local node
+[2016-05-18T22:06:53.783659] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0226' from master workflow
+[2016-05-18T22:06:53.867049] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0235' to master workflow
+[2016-05-18T22:06:53.986126] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0226] Task initiated on local node
+[2016-05-18T22:06:54.110862] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0111' from master workflow
+[2016-05-18T22:06:54.208798] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0236' to master workflow
+[2016-05-18T22:06:54.309159] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0111] Task initiated on local node
+[2016-05-18T22:06:54.436175] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0237' to master workflow
+[2016-05-18T22:06:54.536300] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0222' launched from master workflow
+[2016-05-18T22:06:54.611324] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0238' to master workflow
+[2016-05-18T22:06:54.683998] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0226' launched from master workflow
+[2016-05-18T22:06:54.744767] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0239' to master workflow
+[2016-05-18T22:06:54.811525] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0124' launched from master workflow
+[2016-05-18T22:06:54.869909] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0240' to master workflow
+[2016-05-18T22:06:54.928323] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0111' launched from master workflow
+[2016-05-18T22:06:54.995055] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0241' to master workflow
+[2016-05-18T22:06:55.056199] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0242' to master workflow
+[2016-05-18T22:06:55.128684] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0229' from master workflow
+[2016-05-18T22:06:55.195294] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0243' to master workflow
+[2016-05-18T22:06:55.279434] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0229] Task initiated on local node
+[2016-05-18T22:06:55.370815] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0165' from master workflow
+[2016-05-18T22:06:55.459617] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0244' to master workflow
+[2016-05-18T22:06:55.546347] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0165] Task initiated on local node
+[2016-05-18T22:06:55.643071] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0076' from master workflow
+[2016-05-18T22:06:55.737255] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0245' to master workflow
+[2016-05-18T22:06:55.843236] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0076] Task initiated on local node
+[2016-05-18T22:06:55.954792] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0177' from master workflow
+[2016-05-18T22:06:56.046583] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0246' to master workflow
+[2016-05-18T22:06:56.155321] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0177] Task initiated on local node
+[2016-05-18T22:06:56.263459] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0247' to master workflow
+[2016-05-18T22:06:56.363544] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0229' launched from master workflow
+[2016-05-18T22:06:56.455298] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0248' to master workflow
+[2016-05-18T22:06:56.518550] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0165' launched from master workflow
+[2016-05-18T22:06:56.592865] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0249' to master workflow
+[2016-05-18T22:06:56.657994] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0250' to master workflow
+[2016-05-18T22:06:56.743750] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0136' from master workflow
+[2016-05-18T22:06:56.918892] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0251' to master workflow
+[2016-05-18T22:06:57.011011] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0136] Task initiated on local node
+[2016-05-18T22:06:57.102387] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0045' from master workflow
+[2016-05-18T22:06:57.210683] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0252' to master workflow
+[2016-05-18T22:06:57.298376] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0045] Task initiated on local node
+[2016-05-18T22:06:57.381427] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0253' to master workflow
+[2016-05-18T22:06:57.473200] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0177' launched from master workflow
+[2016-05-18T22:06:57.552658] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0254' to master workflow
+[2016-05-18T22:06:57.619427] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0076' launched from master workflow
+[2016-05-18T22:06:57.686082] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0255' to master workflow
+[2016-05-18T22:06:57.752812] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0136' launched from master workflow
+[2016-05-18T22:06:57.819449] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'sort_sortCandidateSV' to master workflow
+[2016-05-18T22:06:57.886183] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0045' launched from master workflow
+[2016-05-18T22:06:57.958332] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'tabix_sortCandidateSV' to master workflow
+[2016-05-18T22:06:58.030869] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'sort_sortDiploidSV' to master workflow
+[2016-05-18T22:06:58.104874] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0255' from master workflow
+[2016-05-18T22:06:58.169571] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'tabix_sortDiploidSV' to master workflow
+[2016-05-18T22:06:58.282656] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0255] Task initiated on local node
+[2016-05-18T22:06:58.403204] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0080' from master workflow
+[2016-05-18T22:06:58.511539] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'extractSmallIndels' to master workflow
+[2016-05-18T22:06:58.628599] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0080] Task initiated on local node
+[2016-05-18T22:06:58.728393] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0242' from master workflow
+[2016-05-18T22:06:58.828583] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'extractSmallIndels_tabix' to master workflow
+[2016-05-18T22:06:58.929375] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0242] Task initiated on local node
+[2016-05-18T22:06:59.029260] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0125' from master workflow
+[2016-05-18T22:06:59.120865] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'sortEdgeRuntimeLogs' to master workflow
+[2016-05-18T22:06:59.204668] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0125] Task initiated on local node
+[2016-05-18T22:06:59.279373] [a17821e24a45] [424_1] [WorkflowRunner] Adding command task 'mergeEdgeStats' to master workflow
+[2016-05-18T22:06:59.364584] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0080' launched from master workflow
+[2016-05-18T22:06:59.446089] [a17821e24a45] [424_1] [TaskRunner:masterWorkflow] Finished task specification for master workflow, waiting for task completion
+[2016-05-18T22:06:59.513044] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0125' launched from master workflow
+[2016-05-18T22:06:59.581570] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0242' launched from master workflow
+[2016-05-18T22:06:59.648312] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0255' launched from master workflow
+[2016-05-18T22:06:59.721541] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0252' from master workflow
+[2016-05-18T22:06:59.790705] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0252] Task initiated on local node
+[2016-05-18T22:06:59.879636] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0133' from master workflow
+[2016-05-18T22:06:59.991154] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0133] Task initiated on local node
+[2016-05-18T22:07:00.154973] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0254' from master workflow
+[2016-05-18T22:07:00.249716] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0254] Task initiated on local node
+[2016-05-18T22:07:00.401218] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0031' from master workflow
+[2016-05-18T22:07:00.499536] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0031] Task initiated on local node
+[2016-05-18T22:07:00.613302] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0252' launched from master workflow
+[2016-05-18T22:07:00.698982] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0133' launched from master workflow
+[2016-05-18T22:07:00.790747] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0254' launched from master workflow
+[2016-05-18T22:07:00.882548] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0031' launched from master workflow
+[2016-05-18T22:07:00.963578] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0180' from master workflow
+[2016-05-18T22:07:01.038079] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0180] Task initiated on local node
+[2016-05-18T22:07:01.138714] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0247' from master workflow
+[2016-05-18T22:07:01.246783] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0247] Task initiated on local node
+[2016-05-18T22:07:01.352402] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0010' from master workflow
+[2016-05-18T22:07:01.467106] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0010] Task initiated on local node
+[2016-05-18T22:07:01.564046] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0052' from master workflow
+[2016-05-18T22:07:01.717490] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0052] Task initiated on local node
+[2016-05-18T22:07:01.945228] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0180' launched from master workflow
+[2016-05-18T22:07:02.033580] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0010' launched from master workflow
+[2016-05-18T22:07:02.116974] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0247' launched from master workflow
+[2016-05-18T22:07:02.190133] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0117' from master workflow
+[2016-05-18T22:07:02.259661] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0117] Task initiated on local node
+[2016-05-18T22:07:02.348390] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0053' from master workflow
+[2016-05-18T22:07:02.476235] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0053] Task initiated on local node
+[2016-05-18T22:07:02.612548] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0104' from master workflow
+[2016-05-18T22:07:02.743317] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0104] Task initiated on local node
+[2016-05-18T22:07:02.923567] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0052' launched from master workflow
+[2016-05-18T22:07:03.358877] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0117' launched from master workflow
+[2016-05-18T22:07:03.581646] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0053' launched from master workflow
+[2016-05-18T22:07:03.656557] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0021' from master workflow
+[2016-05-18T22:07:03.726187] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0021] Task initiated on local node
+[2016-05-18T22:07:03.798349] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0208' from master workflow
+[2016-05-18T22:07:03.876331] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0208] Task initiated on local node
+[2016-05-18T22:07:04.030153] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0227' from master workflow
+[2016-05-18T22:07:04.142936] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0227] Task initiated on local node
+[2016-05-18T22:07:04.456910] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0021' launched from master workflow
+[2016-05-18T22:07:04.525741] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0227' launched from master workflow
+[2016-05-18T22:07:04.600579] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0104' launched from master workflow
+[2016-05-18T22:07:04.672969] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0059' from master workflow
+[2016-05-18T22:07:04.743324] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0059] Task initiated on local node
+[2016-05-18T22:07:04.840534] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0101' from master workflow
+[2016-05-18T22:07:04.935354] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0101] Task initiated on local node
+[2016-05-18T22:07:05.040619] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0206' from master workflow
+[2016-05-18T22:07:05.118782] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0206] Task initiated on local node
+[2016-05-18T22:07:05.256006] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0208' launched from master workflow
+[2016-05-18T22:07:05.383166] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0101' launched from master workflow
+[2016-05-18T22:07:05.499959] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0059' launched from master workflow
+[2016-05-18T22:07:05.582801] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0007' from master workflow
+[2016-05-18T22:07:05.653208] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0007] Task initiated on local node
+[2016-05-18T22:07:05.758013] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0213' from master workflow
+[2016-05-18T22:07:05.852399] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0213] Task initiated on local node
+[2016-05-18T22:07:05.966442] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0091' from master workflow
+[2016-05-18T22:07:06.078251] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0091] Task initiated on local node
+[2016-05-18T22:07:06.199995] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0206' launched from master workflow
+[2016-05-18T22:07:06.283302] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0245' from master workflow
+[2016-05-18T22:07:06.361485] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0245] Task initiated on local node
+[2016-05-18T22:07:06.491758] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0213' launched from master workflow
+[2016-05-18T22:07:06.602277] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0007' launched from master workflow
+[2016-05-18T22:07:06.702278] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0091' launched from master workflow
+[2016-05-18T22:07:06.769025] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0245' launched from master workflow
+[2016-05-18T22:07:06.909164] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0127' from master workflow
+[2016-05-18T22:07:06.995158] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0127] Task initiated on local node
+[2016-05-18T22:07:07.083964] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0082' from master workflow
+[2016-05-18T22:07:07.203647] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0082] Task initiated on local node
+[2016-05-18T22:07:07.317243] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0158' from master workflow
+[2016-05-18T22:07:07.412196] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0158] Task initiated on local node
+[2016-05-18T22:07:07.501006] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0027' from master workflow
+[2016-05-18T22:07:07.579056] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0027] Task initiated on local node
+[2016-05-18T22:07:07.700957] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0082' launched from master workflow
+[2016-05-18T22:07:07.811503] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0127' launched from master workflow
+[2016-05-18T22:07:07.911626] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0158' launched from master workflow
+[2016-05-18T22:07:08.009490] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0071' from master workflow
+[2016-05-18T22:07:08.063090] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0071] Task initiated on local node
+[2016-05-18T22:07:08.151329] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0152' from master workflow
+[2016-05-18T22:07:08.271953] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0152] Task initiated on local node
+[2016-05-18T22:07:08.376342] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0249' from master workflow
+[2016-05-18T22:07:08.463442] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0249] Task initiated on local node
+[2016-05-18T22:07:08.543162] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0071' launched from master workflow
+[2016-05-18T22:07:08.644809] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0027' launched from master workflow
+[2016-05-18T22:07:08.726805] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0163' from master workflow
+[2016-05-18T22:07:08.846080] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0163] Task initiated on local node
+[2016-05-18T22:07:08.943398] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0184' from master workflow
+[2016-05-18T22:07:09.079644] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0184] Task initiated on local node
+[2016-05-18T22:07:09.259966] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0152' launched from master workflow
+[2016-05-18T22:07:09.379076] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0249' launched from master workflow
+[2016-05-18T22:07:09.479156] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0184' launched from master workflow
+[2016-05-18T22:07:09.545918] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0163' launched from master workflow
+[2016-05-18T22:07:09.618271] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0209' from master workflow
+[2016-05-18T22:07:09.688314] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0209] Task initiated on local node
+[2016-05-18T22:07:09.769304] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0190' from master workflow
+[2016-05-18T22:07:09.872409] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0190] Task initiated on local node
+[2016-05-18T22:07:10.018762] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0211' from master workflow
+[2016-05-18T22:07:10.124481] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0211] Task initiated on local node
+[2016-05-18T22:07:10.261212] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0102' from master workflow
+[2016-05-18T22:07:10.397383] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0102] Task initiated on local node
+[2016-05-18T22:07:10.544887] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0209' launched from master workflow
+[2016-05-18T22:07:10.671328] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0190' launched from master workflow
+[2016-05-18T22:07:10.780533] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0211' launched from master workflow
+[2016-05-18T22:07:10.846321] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0102' launched from master workflow
+[2016-05-18T22:07:10.920365] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0204' from master workflow
+[2016-05-18T22:07:10.989488] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0204] Task initiated on local node
+[2016-05-18T22:07:11.069354] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0228' from master workflow
+[2016-05-18T22:07:11.156944] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0228] Task initiated on local node
+[2016-05-18T22:07:11.278960] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0028' from master workflow
+[2016-05-18T22:07:11.365464] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0028] Task initiated on local node
+[2016-05-18T22:07:11.471026] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0159' from master workflow
+[2016-05-18T22:07:11.607990] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0159] Task initiated on local node
+[2016-05-18T22:07:11.721175] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0204' launched from master workflow
+[2016-05-18T22:07:11.890314] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0228' launched from master workflow
+[2016-05-18T22:07:11.973805] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0028' launched from master workflow
+[2016-05-18T22:07:12.090503] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0159' launched from master workflow
+[2016-05-18T22:07:12.170904] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0244' from master workflow
+[2016-05-18T22:07:12.240441] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0244] Task initiated on local node
+[2016-05-18T22:07:12.322134] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0148' from master workflow
+[2016-05-18T22:07:12.417633] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0148] Task initiated on local node
+[2016-05-18T22:07:12.497434] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0170' from master workflow
+[2016-05-18T22:07:12.583221] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0170] Task initiated on local node
+[2016-05-18T22:07:12.696555] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0008' from master workflow
+[2016-05-18T22:07:12.809006] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0008] Task initiated on local node
+[2016-05-18T22:07:12.922887] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0244' launched from master workflow
+[2016-05-18T22:07:13.075079] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0148' launched from master workflow
+[2016-05-18T22:07:13.175259] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0170' launched from master workflow
+[2016-05-18T22:07:13.248189] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0087' from master workflow
+[2016-05-18T22:07:13.318091] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0087] Task initiated on local node
+[2016-05-18T22:07:13.398327] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0110' from master workflow
+[2016-05-18T22:07:13.493024] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0110] Task initiated on local node
+[2016-05-18T22:07:13.581867] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0246' from master workflow
+[2016-05-18T22:07:13.675707] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0246] Task initiated on local node
+[2016-05-18T22:07:13.755480] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0008' launched from master workflow
+[2016-05-18T22:07:13.867771] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0110' launched from master workflow
+[2016-05-18T22:07:13.991252] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0087' launched from master workflow
+[2016-05-18T22:07:14.107163] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0153' from master workflow
+[2016-05-18T22:07:14.177757] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0153] Task initiated on local node
+[2016-05-18T22:07:14.274215] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0086' from master workflow
+[2016-05-18T22:07:14.394659] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0086] Task initiated on local node
+[2016-05-18T22:07:14.506160] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0130' from master workflow
+[2016-05-18T22:07:14.610715] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0130] Task initiated on local node
+[2016-05-18T22:07:14.724750] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0246' launched from master workflow
+[2016-05-18T22:07:14.825082] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0086' launched from master workflow
+[2016-05-18T22:07:14.924907] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0153' launched from master workflow
+[2016-05-18T22:07:15.007019] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0100' from master workflow
+[2016-05-18T22:07:15.077968] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0100] Task initiated on local node
+[2016-05-18T22:07:15.214603] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0139' from master workflow
+[2016-05-18T22:07:15.392767] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0139] Task initiated on local node
+[2016-05-18T22:07:15.506552] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0160' from master workflow
+[2016-05-18T22:07:15.645208] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0160] Task initiated on local node
+[2016-05-18T22:07:15.814958] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0130' launched from master workflow
+[2016-05-18T22:07:15.933356] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0160' launched from master workflow
+[2016-05-18T22:07:16.000096] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0139' launched from master workflow
+[2016-05-18T22:07:16.066924] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0100' launched from master workflow
+[2016-05-18T22:07:16.139498] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0218' from master workflow
+[2016-05-18T22:07:16.210063] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0218] Task initiated on local node
+[2016-05-18T22:07:16.315147] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0037' from master workflow
+[2016-05-18T22:07:16.418787] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0037] Task initiated on local node
+[2016-05-18T22:07:16.585300] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0251' from master workflow
+[2016-05-18T22:07:16.744402] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0251] Task initiated on local node
+[2016-05-18T22:07:16.910587] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0060' from master workflow
+[2016-05-18T22:07:17.010312] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0060] Task initiated on local node
+[2016-05-18T22:07:17.119294] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0037' launched from master workflow
+[2016-05-18T22:07:17.243067] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0218' launched from master workflow
+[2016-05-18T22:07:17.349426] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0183' from master workflow
+[2016-05-18T22:07:17.419039] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0183] Task initiated on local node
+[2016-05-18T22:07:17.516193] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0210' from master workflow
+[2016-05-18T22:07:17.610554] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0210] Task initiated on local node
+[2016-05-18T22:07:17.753072] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0251' launched from master workflow
+[2016-05-18T22:07:17.885766] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0060' launched from master workflow
+[2016-05-18T22:07:17.997057] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0210' launched from master workflow
+[2016-05-18T22:07:18.068922] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0183' launched from master workflow
+[2016-05-18T22:07:18.141879] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0231' from master workflow
+[2016-05-18T22:07:18.211613] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0231] Task initiated on local node
+[2016-05-18T22:07:18.295360] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0167' from master workflow
+[2016-05-18T22:07:18.403905] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0167] Task initiated on local node
+[2016-05-18T22:07:18.509113] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0026' from master workflow
+[2016-05-18T22:07:18.629233] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0026] Task initiated on local node
+[2016-05-18T22:07:18.742609] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0123' from master workflow
+[2016-05-18T22:07:18.837629] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0123] Task initiated on local node
+[2016-05-18T22:07:18.959256] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0167' launched from master workflow
+[2016-05-18T22:07:19.061558] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0026' launched from master workflow
+[2016-05-18T22:07:19.173473] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0231' launched from master workflow
+[2016-05-18T22:07:19.271463] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0232' from master workflow
+[2016-05-18T22:07:19.349409] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0232] Task initiated on local node
+[2016-05-18T22:07:19.421606] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0024' from master workflow
+[2016-05-18T22:07:19.525221] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0024] Task initiated on local node
+[2016-05-18T22:07:19.655276] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0212' from master workflow
+[2016-05-18T22:07:19.771698] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0212] Task initiated on local node
+[2016-05-18T22:07:19.888796] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0123' launched from master workflow
+[2016-05-18T22:07:19.987026] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0024' launched from master workflow
+[2016-05-18T22:07:20.074486] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0212' launched from master workflow
+[2016-05-18T22:07:20.156723] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0248' from master workflow
+[2016-05-18T22:07:20.225652] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0248] Task initiated on local node
+[2016-05-18T22:07:20.360187] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0061' from master workflow
+[2016-05-18T22:07:20.481185] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0061] Task initiated on local node
+[2016-05-18T22:07:20.635328] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0107' from master workflow
+[2016-05-18T22:07:20.746931] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0107] Task initiated on local node
+[2016-05-18T22:07:20.843992] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0248' launched from master workflow
+[2016-05-18T22:07:20.950496] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0232' launched from master workflow
+[2016-05-18T22:07:21.054616] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0107' launched from master workflow
+[2016-05-18T22:07:21.121259] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0061' launched from master workflow
+[2016-05-18T22:07:21.194259] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0198' from master workflow
+[2016-05-18T22:07:21.264050] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0198] Task initiated on local node
+[2016-05-18T22:07:21.373779] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0179' from master workflow
+[2016-05-18T22:07:21.480591] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0179] Task initiated on local node
+[2016-05-18T22:07:21.602774] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0003' from master workflow
+[2016-05-18T22:07:21.697510] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0003] Task initiated on local node
+[2016-05-18T22:07:21.874412] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0017' from master workflow
+[2016-05-18T22:07:22.036395] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0017] Task initiated on local node
+[2016-05-18T22:07:22.144991] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0179' launched from master workflow
+[2016-05-18T22:07:22.280618] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0003' launched from master workflow
+[2016-05-18T22:07:22.380656] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0017' launched from master workflow
+[2016-05-18T22:07:22.447385] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0198' launched from master workflow
+[2016-05-18T22:07:22.520695] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0048' from master workflow
+[2016-05-18T22:07:22.589955] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0048] Task initiated on local node
+[2016-05-18T22:07:22.670417] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0187' from master workflow
+[2016-05-18T22:07:22.784131] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0187] Task initiated on local node
+[2016-05-18T22:07:22.920642] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0095' from master workflow
+[2016-05-18T22:07:23.029248] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0095] Task initiated on local node
+[2016-05-18T22:07:23.154080] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0205' from master workflow
+[2016-05-18T22:07:23.271010] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0205] Task initiated on local node
+[2016-05-18T22:07:23.387564] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0048' launched from master workflow
+[2016-05-18T22:07:23.507119] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0187' launched from master workflow
+[2016-05-18T22:07:23.607138] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0095' launched from master workflow
+[2016-05-18T22:07:23.680194] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0072' from master workflow
+[2016-05-18T22:07:23.741566] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0072] Task initiated on local node
+[2016-05-18T22:07:23.830186] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0066' from master workflow
+[2016-05-18T22:07:23.908653] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0066] Task initiated on local node
+[2016-05-18T22:07:24.022140] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0240' from master workflow
+[2016-05-18T22:07:24.133482] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0240] Task initiated on local node
+[2016-05-18T22:07:24.294494] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0072' launched from master workflow
+[2016-05-18T22:07:24.396693] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0205' launched from master workflow
+[2016-05-18T22:07:24.488443] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0066' launched from master workflow
+[2016-05-18T22:07:24.582963] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0240' launched from master workflow
+[2016-05-18T22:07:24.655908] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0121' from master workflow
+[2016-05-18T22:07:24.717257] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0121] Task initiated on local node
+[2016-05-18T22:07:24.797787] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0055' from master workflow
+[2016-05-18T22:07:24.884165] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0055] Task initiated on local node
+[2016-05-18T22:07:24.989723] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0129' from master workflow
+[2016-05-18T22:07:25.111645] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0129] Task initiated on local node
+[2016-05-18T22:07:25.206538] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0143' from master workflow
+[2016-05-18T22:07:25.348799] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0143] Task initiated on local node
+[2016-05-18T22:07:25.479221] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0121' launched from master workflow
+[2016-05-18T22:07:25.600583] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0055' launched from master workflow
+[2016-05-18T22:07:25.707001] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0193' from master workflow
+[2016-05-18T22:07:25.785092] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0193] Task initiated on local node
+[2016-05-18T22:07:25.865418] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0030' from master workflow
+[2016-05-18T22:07:25.993302] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0030] Task initiated on local node
+[2016-05-18T22:07:26.115572] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0129' launched from master workflow
+[2016-05-18T22:07:26.209233] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0143' launched from master workflow
+[2016-05-18T22:07:26.315509] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0156' from master workflow
+[2016-05-18T22:07:26.385371] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0156] Task initiated on local node
+[2016-05-18T22:07:26.482529] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0088' from master workflow
+[2016-05-18T22:07:26.592022] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0088] Task initiated on local node
+[2016-05-18T22:07:26.747452] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0030' launched from master workflow
+[2016-05-18T22:07:26.943482] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0193' launched from master workflow
+[2016-05-18T22:07:27.035121] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0156' launched from master workflow
+[2016-05-18T22:07:27.116402] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0001' from master workflow
+[2016-05-18T22:07:27.186148] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0001] Task initiated on local node
+[2016-05-18T22:07:27.266662] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0214' from master workflow
+[2016-05-18T22:07:27.370547] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0214] Task initiated on local node
+[2016-05-18T22:07:27.500186] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0230' from master workflow
+[2016-05-18T22:07:27.612077] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0230] Task initiated on local node
+[2016-05-18T22:07:27.766990] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0001' launched from master workflow
+[2016-05-18T22:07:27.869271] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0088' launched from master workflow
+[2016-05-18T22:07:27.977607] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0214' launched from master workflow
+[2016-05-18T22:07:28.059050] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0122' from master workflow
+[2016-05-18T22:07:28.128533] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0122] Task initiated on local node
+[2016-05-18T22:07:28.242396] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0154' from master workflow
+[2016-05-18T22:07:28.345620] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0154] Task initiated on local node
+[2016-05-18T22:07:28.459332] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0217' from master workflow
+[2016-05-18T22:07:28.554567] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0217] Task initiated on local node
+[2016-05-18T22:07:28.666707] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0230' launched from master workflow
+[2016-05-18T22:07:28.745702] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0122' launched from master workflow
+[2016-05-18T22:07:28.834572] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0145' from master workflow
+[2016-05-18T22:07:28.905397] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0145] Task initiated on local node
+[2016-05-18T22:07:29.002097] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0219' from master workflow
+[2016-05-18T22:07:29.130194] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0219] Task initiated on local node
+[2016-05-18T22:07:29.243968] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0154' launched from master workflow
+[2016-05-18T22:07:29.346182] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0145' launched from master workflow
+[2016-05-18T22:07:29.446189] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0217' launched from master workflow
+[2016-05-18T22:07:29.535778] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0138' from master workflow
+[2016-05-18T22:07:29.607529] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0138] Task initiated on local node
+[2016-05-18T22:07:29.694274] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0238' from master workflow
+[2016-05-18T22:07:29.780689] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0238] Task initiated on local node
+[2016-05-18T22:07:29.894428] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0239' from master workflow
+[2016-05-18T22:07:30.021706] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0239] Task initiated on local node
+[2016-05-18T22:07:30.202253] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0138' launched from master workflow
+[2016-05-18T22:07:30.330165] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0219' launched from master workflow
+[2016-05-18T22:07:30.438496] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0239' launched from master workflow
+[2016-05-18T22:07:30.505201] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0238' launched from master workflow
+[2016-05-18T22:07:30.577507] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0250' from master workflow
+[2016-05-18T22:07:30.655964] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0250] Task initiated on local node
+[2016-05-18T22:07:30.744987] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0253' from master workflow
+[2016-05-18T22:07:30.831298] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0253] Task initiated on local node
+[2016-05-18T22:07:30.944813] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0237' from master workflow
+[2016-05-18T22:07:31.097764] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0237] Task initiated on local node
+[2016-05-18T22:07:31.211934] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0108' from master workflow
+[2016-05-18T22:07:31.348403] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0108] Task initiated on local node
+[2016-05-18T22:07:31.495187] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0250' launched from master workflow
+[2016-05-18T22:07:31.597571] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0253' launched from master workflow
+[2016-05-18T22:07:31.707190] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0237' launched from master workflow
+[2016-05-18T22:07:31.829670] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0171' from master workflow
+[2016-05-18T22:07:31.966477] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0171] Task initiated on local node
+[2016-05-18T22:07:32.104306] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0078' from master workflow
+[2016-05-18T22:07:32.224787] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0078] Task initiated on local node
+[2016-05-18T22:07:32.363013] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0161' from master workflow
+[2016-05-18T22:07:32.474634] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0161] Task initiated on local node
+[2016-05-18T22:07:32.588015] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0171' launched from master workflow
+[2016-05-18T22:07:32.681811] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0108' launched from master workflow
+[2016-05-18T22:07:32.773660] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0078' launched from master workflow
+[2016-05-18T22:07:32.855648] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0192' from master workflow
+[2016-05-18T22:07:32.925667] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0192] Task initiated on local node
+[2016-05-18T22:07:33.013409] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0047' from master workflow
+[2016-05-18T22:07:33.700065] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0047] Task initiated on local node
+[2016-05-18T22:07:33.813149] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0049' from master workflow
+[2016-05-18T22:07:33.926286] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0049] Task initiated on local node
+[2016-05-18T22:07:34.038319] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0161' launched from master workflow
+[2016-05-18T22:07:34.131939] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0192' launched from master workflow
+[2016-05-18T22:07:34.238603] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0116' from master workflow
+[2016-05-18T22:07:34.334447] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0116] Task initiated on local node
+[2016-05-18T22:07:34.464482] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0162' from master workflow
+[2016-05-18T22:07:34.542350] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0162] Task initiated on local node
+[2016-05-18T22:07:34.638524] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0047' launched from master workflow
+[2016-05-18T22:07:34.791437] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0116' launched from master workflow
+[2016-05-18T22:07:34.891369] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0049' launched from master workflow
+[2016-05-18T22:07:34.997682] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0235' from master workflow
+[2016-05-18T22:07:35.077291] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0235] Task initiated on local node
+[2016-05-18T22:07:35.156210] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0033' from master workflow
+[2016-05-18T22:07:35.268136] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0033] Task initiated on local node
+[2016-05-18T22:07:35.390533] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0057' from master workflow
+[2016-05-18T22:07:35.543177] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0057] Task initiated on local node
+[2016-05-18T22:07:35.672987] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0235' launched from master workflow
+[2016-05-18T22:07:35.766778] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0162' launched from master workflow
+[2016-05-18T22:07:35.858369] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0033' launched from master workflow
+[2016-05-18T22:07:35.941127] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0140' from master workflow
+[2016-05-18T22:07:36.011620] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0140] Task initiated on local node
+[2016-05-18T22:07:36.108065] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0106' from master workflow
+[2016-05-18T22:07:36.228235] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0106] Task initiated on local node
+[2016-05-18T22:07:36.356762] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0115' from master workflow
+[2016-05-18T22:07:36.488667] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0115] Task initiated on local node
+[2016-05-18T22:07:36.675255] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0057' launched from master workflow
+[2016-05-18T22:07:36.775663] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0106' launched from master workflow
+[2016-05-18T22:07:37.011385] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0140' launched from master workflow
+[2016-05-18T22:07:37.076018] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0115' launched from master workflow
+[2016-05-18T22:07:37.151480] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0084' from master workflow
+[2016-05-18T22:07:37.218708] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0084] Task initiated on local node
+[2016-05-18T22:07:37.315571] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0197' from master workflow
+[2016-05-18T22:07:37.418917] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0197] Task initiated on local node
+[2016-05-18T22:07:37.574046] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0092' from master workflow
+[2016-05-18T22:07:37.694330] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0092] Task initiated on local node
+[2016-05-18T22:07:37.851592] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0233' from master workflow
+[2016-05-18T22:07:37.953018] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0233] Task initiated on local node
+[2016-05-18T22:07:38.074385] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0197' launched from master workflow
+[2016-05-18T22:07:38.176634] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0084' launched from master workflow
+[2016-05-18T22:07:38.284972] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0092' launched from master workflow
+[2016-05-18T22:07:38.358330] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0119' from master workflow
+[2016-05-18T22:07:38.427617] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0119] Task initiated on local node
+[2016-05-18T22:07:38.524557] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0032' from master workflow
+[2016-05-18T22:07:38.630119] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0032] Task initiated on local node
+[2016-05-18T22:07:38.777498] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0005' from master workflow
+[2016-05-18T22:07:38.879571] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0005] Task initiated on local node
+[2016-05-18T22:07:39.016597] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0119' launched from master workflow
+[2016-05-18T22:07:39.119002] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0233' launched from master workflow
+[2016-05-18T22:07:39.220464] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0090' from master workflow
+[2016-05-18T22:07:39.294873] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0090] Task initiated on local node
+[2016-05-18T22:07:39.392037] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0175' from master workflow
+[2016-05-18T22:07:39.489734] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0175] Task initiated on local node
+[2016-05-18T22:07:39.595512] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0032' launched from master workflow
+[2016-05-18T22:07:39.689360] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0005' launched from master workflow
+[2016-05-18T22:07:39.769587] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0090' launched from master workflow
+[2016-05-18T22:07:39.867812] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0243' from master workflow
+[2016-05-18T22:07:39.945890] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0243] Task initiated on local node
+[2016-05-18T22:07:40.037513] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0112' from master workflow
+[2016-05-18T22:07:40.163628] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0112] Task initiated on local node
+[2016-05-18T22:07:40.271314] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0009' from master workflow
+[2016-05-18T22:07:40.399920] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0009] Task initiated on local node
+[2016-05-18T22:07:40.526256] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0175' launched from master workflow
+[2016-05-18T22:07:40.620452] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0112' launched from master workflow
+[2016-05-18T22:07:40.712395] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0243' launched from master workflow
+[2016-05-18T22:07:40.790670] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0009' launched from master workflow
+[2016-05-18T22:07:40.872447] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0068' from master workflow
+[2016-05-18T22:07:40.951224] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0068] Task initiated on local node
+[2016-05-18T22:07:41.044079] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0046' from master workflow
+[2016-05-18T22:07:41.149137] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0046] Task initiated on local node
+[2016-05-18T22:07:41.269502] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0172' from master workflow
+[2016-05-18T22:07:41.367474] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0172] Task initiated on local node
+[2016-05-18T22:07:41.528063] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0147' from master workflow
+[2016-05-18T22:07:41.655963] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0147] Task initiated on local node
+[2016-05-18T22:07:41.831562] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0046' launched from master workflow
+[2016-05-18T22:07:42.415005] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0172' launched from master workflow
+[2016-05-18T22:07:42.518959] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0068' launched from master workflow
+[2016-05-18T22:07:42.605118] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0118' from master workflow
+[2016-05-18T22:07:42.674911] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0118] Task initiated on local node
+[2016-05-18T22:07:42.771401] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0199' from master workflow
+[2016-05-18T22:07:42.883376] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0199] Task initiated on local node
+[2016-05-18T22:07:43.004982] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0020' from master workflow
+[2016-05-18T22:07:43.133604] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0020] Task initiated on local node
+[2016-05-18T22:07:43.263424] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0147' launched from master workflow
+[2016-05-18T22:07:43.374433] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0118' launched from master workflow
+[2016-05-18T22:07:43.482246] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0199' launched from master workflow
+[2016-05-18T22:07:43.565901] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0020' launched from master workflow
+[2016-05-18T22:07:43.646951] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0155' from master workflow
+[2016-05-18T22:07:43.717365] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0155] Task initiated on local node
+[2016-05-18T22:07:43.822186] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0051' from master workflow
+[2016-05-18T22:07:43.938719] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0051] Task initiated on local node
+[2016-05-18T22:07:44.064363] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0224' from master workflow
+[2016-05-18T22:07:44.155399] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0224] Task initiated on local node
+[2016-05-18T22:07:44.256133] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0036' from master workflow
+[2016-05-18T22:07:44.384638] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0036] Task initiated on local node
+[2016-05-18T22:07:44.502625] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0051' launched from master workflow
+[2016-05-18T22:07:44.633225] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0155' launched from master workflow
+[2016-05-18T22:07:44.738151] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0224' launched from master workflow
+[2016-05-18T22:07:44.814514] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0169' from master workflow
+[2016-05-18T22:07:44.893244] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0169] Task initiated on local node
+[2016-05-18T22:07:44.989893] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0174' from master workflow
+[2016-05-18T22:07:45.084934] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0174] Task initiated on local node
+[2016-05-18T22:07:45.206847] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0081' from master workflow
+[2016-05-18T22:07:45.302321] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0081] Task initiated on local node
+[2016-05-18T22:07:45.437053] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0036' launched from master workflow
+[2016-05-18T22:07:45.577811] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0169' launched from master workflow
+[2016-05-18T22:07:45.688408] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0195' from master workflow
+[2016-05-18T22:07:45.786737] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0195] Task initiated on local node
+[2016-05-18T22:07:45.896054] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0002' from master workflow
+[2016-05-18T22:07:45.990983] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0002] Task initiated on local node
+[2016-05-18T22:07:46.091300] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0174' launched from master workflow
+[2016-05-18T22:07:46.218471] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0195' launched from master workflow
+[2016-05-18T22:07:46.335354] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0081' launched from master workflow
+[2016-05-18T22:07:46.425217] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0073' from master workflow
+[2016-05-18T22:07:46.495197] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0073] Task initiated on local node
+[2016-05-18T22:07:46.591705] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0141' from master workflow
+[2016-05-18T22:07:46.695282] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0141] Task initiated on local node
+[2016-05-18T22:07:46.830453] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0223' from master workflow
+[2016-05-18T22:07:46.967311] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0223] Task initiated on local node
+[2016-05-18T22:07:47.075382] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0002' launched from master workflow
+[2016-05-18T22:07:47.244453] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0073' launched from master workflow
+[2016-05-18T22:07:47.350953] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0089' from master workflow
+[2016-05-18T22:07:47.420770] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0089] Task initiated on local node
+[2016-05-18T22:07:47.525693] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0168' from master workflow
+[2016-05-18T22:07:47.628776] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0168] Task initiated on local node
+[2016-05-18T22:07:47.742508] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0141' launched from master workflow
+[2016-05-18T22:07:47.837610] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0223' launched from master workflow
+[2016-05-18T22:07:47.936552] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0089' launched from master workflow
+[2016-05-18T22:07:48.018324] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0120' from master workflow
+[2016-05-18T22:07:48.087530] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0120] Task initiated on local node
+[2016-05-18T22:07:48.207189] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0220' from master workflow
+[2016-05-18T22:07:48.329866] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0220] Task initiated on local node
+[2016-05-18T22:07:48.457744] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0215' from master workflow
+[2016-05-18T22:07:48.579364] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0215] Task initiated on local node
+[2016-05-18T22:07:48.691349] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0168' launched from master workflow
+[2016-05-18T22:07:48.804166] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0120' launched from master workflow
+[2016-05-18T22:07:48.895712] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0220' launched from master workflow
+[2016-05-18T22:07:48.979132] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0215' launched from master workflow
+[2016-05-18T22:07:49.052420] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0128' from master workflow
+[2016-05-18T22:07:49.121713] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0128] Task initiated on local node
+[2016-05-18T22:07:49.202228] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0063' from master workflow
+[2016-05-18T22:07:49.305024] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0063] Task initiated on local node
+[2016-05-18T22:07:49.442227] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0079' from master workflow
+[2016-05-18T22:07:49.580294] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0079] Task initiated on local node
+[2016-05-18T22:07:49.710946] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0043' from master workflow
+[2016-05-18T22:07:49.864001] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0043] Task initiated on local node
+[2016-05-18T22:07:49.994447] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0128' launched from master workflow
+[2016-05-18T22:07:50.097565] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0063' launched from master workflow
+[2016-05-18T22:07:50.202733] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0070' from master workflow
+[2016-05-18T22:07:50.264513] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0070] Task initiated on local node
+[2016-05-18T22:07:50.353061] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0150' from master workflow
+[2016-05-18T22:07:50.439838] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0150] Task initiated on local node
+[2016-05-18T22:07:50.568676] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0079' launched from master workflow
+[2016-05-18T22:07:50.697080] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0043' launched from master workflow
+[2016-05-18T22:07:50.812025] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0000' from master workflow
+[2016-05-18T22:07:50.890756] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0000] Task initiated on local node
+[2016-05-18T22:07:51.004213] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0241' from master workflow
+[2016-05-18T22:07:51.115722] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0241] Task initiated on local node
+[2016-05-18T22:07:51.271077] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0070' launched from master workflow
+[2016-05-18T22:07:51.364640] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0000' launched from master workflow
+[2016-05-18T22:07:51.456553] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0241' launched from master workflow
+[2016-05-18T22:07:51.531711] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0150' launched from master workflow
+[2016-05-18T22:07:51.613164] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0018' from master workflow
+[2016-05-18T22:07:51.682536] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0018] Task initiated on local node
+[2016-05-18T22:07:51.763079] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0234' from master workflow
+[2016-05-18T22:07:51.858509] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0234] Task initiated on local node
+[2016-05-18T22:07:51.986803] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0144' from master workflow
+[2016-05-18T22:07:52.106976] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0144] Task initiated on local node
+[2016-05-18T22:07:52.246784] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0157' from master workflow
+[2016-05-18T22:07:52.350404] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0157] Task initiated on local node
+[2016-05-18T22:07:52.455259] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0018' launched from master workflow
+[2016-05-18T22:07:52.549167] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0144' launched from master workflow
+[2016-05-18T22:07:52.649317] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0234' launched from master workflow
+[2016-05-18T22:07:52.756273] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0188' from master workflow
+[2016-05-18T22:07:52.841857] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0188] Task initiated on local node
+[2016-05-18T22:07:52.930774] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0142' from master workflow
+[2016-05-18T22:07:53.025234] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0142] Task initiated on local node
+[2016-05-18T22:07:53.139490] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0203' from master workflow
+[2016-05-18T22:07:53.284214] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0203] Task initiated on local node
+[2016-05-18T22:07:53.422814] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0188' launched from master workflow
+[2016-05-18T22:07:53.541226] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0142' launched from master workflow
+[2016-05-18T22:07:53.649682] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0157' launched from master workflow
+[2016-05-18T22:07:53.733156] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0203' launched from master workflow
+[2016-05-18T22:07:53.806388] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0221' from master workflow
+[2016-05-18T22:07:53.867945] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0221] Task initiated on local node
+[2016-05-18T22:07:53.948174] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0194' from master workflow
+[2016-05-18T22:07:54.051471] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0194] Task initiated on local node
+[2016-05-18T22:07:54.165061] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0011' from master workflow
+[2016-05-18T22:07:54.259771] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0011] Task initiated on local node
+[2016-05-18T22:07:54.381934] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0137' from master workflow
+[2016-05-18T22:07:54.493412] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0137] Task initiated on local node
+[2016-05-18T22:07:54.632132] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0221' launched from master workflow
+[2016-05-18T22:07:54.744114] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0194' launched from master workflow
+[2016-05-18T22:07:54.842992] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0011' launched from master workflow
+[2016-05-18T22:07:54.949801] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0056' from master workflow
+[2016-05-18T22:07:55.019068] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0056] Task initiated on local node
+[2016-05-18T22:07:55.090780] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0225' from master workflow
+[2016-05-18T22:07:55.193939] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0225] Task initiated on local node
+[2016-05-18T22:07:55.316044] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'generateCandidateSV_0236' from master workflow
+[2016-05-18T22:07:55.411244] [a17821e24a45] [424_1] [TaskRunner:generateCandidateSV_0236] Task initiated on local node
+[2016-05-18T22:07:55.516530] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0137' launched from master workflow
+[2016-05-18T22:07:55.668949] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0056' launched from master workflow
+[2016-05-18T22:07:55.826684] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0225' launched from master workflow
+[2016-05-18T22:07:55.910664] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'generateCandidateSV_0236' launched from master workflow
+[2016-05-18T22:07:55.986366] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'mergeEdgeStats' from master workflow
+[2016-05-18T22:07:56.062201] [a17821e24a45] [424_1] [TaskRunner:mergeEdgeStats] Task initiated on local node
+[2016-05-18T22:07:56.174717] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'sort_sortCandidateSV' from master workflow
+[2016-05-18T22:07:56.254003] [a17821e24a45] [424_1] [TaskRunner:sort_sortCandidateSV] Task initiated on local node
+[2016-05-18T22:07:56.376168] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'sort_sortDiploidSV' from master workflow
+[2016-05-18T22:07:56.546409] [a17821e24a45] [424_1] [TaskRunner:sort_sortDiploidSV] Task initiated on local node
+[2016-05-18T22:07:56.651489] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'sortEdgeRuntimeLogs' from master workflow
+[2016-05-18T22:07:56.771969] [a17821e24a45] [424_1] [TaskRunner:sortEdgeRuntimeLogs] Task initiated on local node
+[2016-05-18T22:07:56.910532] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'sort_sortCandidateSV' launched from master workflow
+[2016-05-18T22:07:57.072964] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'mergeEdgeStats' launched from master workflow
+[2016-05-18T22:07:57.204275] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'extractSmallIndels' from master workflow
+[2016-05-18T22:07:57.506740] [a17821e24a45] [424_1] [TaskRunner:extractSmallIndels] Task initiated on local node
+[2016-05-18T22:07:57.603576] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'tabix_sortCandidateSV' from master workflow
+[2016-05-18T22:07:57.698116] [a17821e24a45] [424_1] [TaskRunner:tabix_sortCandidateSV] Task initiated on local node
+[2016-05-18T22:07:57.820567] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'sort_sortDiploidSV' launched from master workflow
+[2016-05-18T22:07:57.972082] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'sortEdgeRuntimeLogs' launched from master workflow
+[2016-05-18T22:07:58.056140] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'extractSmallIndels' launched from master workflow
+[2016-05-18T22:07:58.150699] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'extractSmallIndels_tabix' from master workflow
+[2016-05-18T22:07:58.214736] [a17821e24a45] [424_1] [TaskRunner:extractSmallIndels_tabix] Task initiated on local node
+[2016-05-18T22:07:58.287746] [a17821e24a45] [424_1] [TaskManager] Launching command task: 'tabix_sortDiploidSV' from master workflow
+[2016-05-18T22:07:58.382530] [a17821e24a45] [424_1] [TaskRunner:tabix_sortDiploidSV] Task initiated on local node
+[2016-05-18T22:07:58.545501] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'tabix_sortCandidateSV' launched from master workflow
+[2016-05-18T22:07:58.673519] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'extractSmallIndels_tabix' launched from master workflow
+[2016-05-18T22:07:58.861107] [a17821e24a45] [424_1] [TaskManager] Completed command task: 'tabix_sortDiploidSV' launched from master workflow
+[2016-05-18T22:08:02.651197] [a17821e24a45] [424_1] [WorkflowRunner] Manta workflow successfully completed.
+[2016-05-18T22:08:02.651197] [a17821e24a45] [424_1] [WorkflowRunner] 
+[2016-05-18T22:08:02.651197] [a17821e24a45] [424_1] [WorkflowRunner] 	workflow version: 0.29.1
+[2016-05-18T22:08:02.737639] [a17821e24a45] [424_1] [WorkflowRunner] 
+[2016-05-18T22:08:02.834292] [a17821e24a45] [424_1] [WorkflowRunner] Workflow successfully completed all tasks
+[2016-05-18T22:08:02.904311] [a17821e24a45] [424_1] [WorkflowRunner] Elapsed time for full workflow: 122 sec

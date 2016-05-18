@@ -1,0 +1,147 @@
+/quast-release_4.0/quast.py -R reference.fasta.gz -O operons.txt -G genes.txt -o rnaquast_test_out contigs_1.fasta contigs_2.fasta
+
+Version: 4.0
+
+System information:
+  OS: Linux-3.10.0-229.14.1.el7.x86_64-x86_64-with-Ubuntu-14.04-trusty (linux_64)
+  Python version: 2.7.6
+  CPUs number: 16
+
+Started: 2016-05-18 21:57:19
+
+Logging to /working-dir/rnaquast_test_out/quast.log
+
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+Main parameters: 
+  Threads: 4, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  reference.fasta.gz ==> reference
+
+Contigs:
+  1  contigs_1.fasta ==> contigs_1
+  2  contigs_2.fasta ==> contigs_2
+
+2016-05-18 21:57:24
+Running Basic statistics processor...
+  Reference genome:
+    reference.fasta, Reference length = 10000, Reference GC % = 52.07
+  Contig files: 
+    1  contigs_1
+    2  contigs_2
+  Calculating N50 and L50...
+    1  contigs_1, N50 = 3980, L50 = 1, Total length = 6710, GC % = 51.28, # N's per 100 kbp =  0.00
+    2  contigs_2, N50 = 3360, L50 = 1, Total length = 5460, GC % = 52.44, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /working-dir/rnaquast_test_out/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /working-dir/rnaquast_test_out/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /working-dir/rnaquast_test_out/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /working-dir/rnaquast_test_out/basic_stats/GC_content_plot.pdf
+Done.
+
+2016-05-18 21:57:25
+Running Contig analyzer...
+Compiling MUMmer (details are in /quast-release_4.0/libs/MUMmer3.23-linux/make.log and make.err)
+make -C /quast-release_4.0/libs/MUMmer3.23-linux > /quast-release_4.0/libs/MUMmer3.23-linux/make.log \
+2> /quast-release_4.0/libs/MUMmer3.23-linux/make.err
+  1  contigs_1
+  1  Logging to files /working-dir/rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stdout and contigs_report_contigs_1.stderr...
+  1  Running Nucmer
+  2  contigs_2
+  2  Logging to files /working-dir/rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stdout and contigs_report_contigs_2.stderr...
+  2  Running Nucmer
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/nucmer -c 65 -l 65 --maxmatch -p rnaquast_test_out/contigs_reports/nucmer_output/contigs_1 \
+     rnaquast_test_out/quast_corrected_input/reference.fasta rnaquast_test_out/quast_corrected_input/contigs_1.fasta \
+     >> rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stdout 2>> rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/nucmer -c 65 -l 65 --maxmatch -p rnaquast_test_out/contigs_reports/nucmer_output/contigs_2 \
+     rnaquast_test_out/quast_corrected_input/reference.fasta rnaquast_test_out/quast_corrected_input/contigs_2.fasta \
+     >> rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stdout 2>> rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/delta-filter -i 95 -l 0 rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.delta \
+     > rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.fdelta 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/delta-filter -i 95 -l 0 rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.delta \
+     > rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.fdelta 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/show-coords rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.delta \
+     > rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.coords_tmp 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/show-coords rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.delta \
+     > rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.coords_tmp 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/show-snps -S -T -H rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.delta \
+     < rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.coords.headless > \
+     rnaquast_test_out/contigs_reports/nucmer_output/contigs_2.all_snps 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_2.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/show-snps -S -T -H rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.delta \
+     < rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.coords.headless > \
+     rnaquast_test_out/contigs_reports/nucmer_output/contigs_1.all_snps 2> rnaquast_test_out/contigs_reports/contigs_report_contigs_1.stderr
+  1  Alignments: rnaquast_test_out/contigs_reports/alignments_contigs_1.tsv
+  1  Analysis is finished.
+  2  Alignments: rnaquast_test_out/contigs_reports/alignments_contigs_2.tsv
+
+  2  Analysis is finished.
+
+  Creating total report...
+    saved to /working-dir/rnaquast_test_out/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /working-dir/rnaquast_test_out/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /working-dir/rnaquast_test_out/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /working-dir/rnaquast_test_out/contigs_reports/misassemblies_plot.pdf
+Done.
+
+2016-05-18 21:57:57
+Running NA-NGA calculation...
+  1  contigs_1, Largest alignment = 2030, NA50 = 1948, NGA50 = 1610, LA50 = 2, LGA50 = 3
+  2  contigs_2, Largest alignment = 2100, NA50 = 1470, NGA50 = 700, LA50 = 2, LGA50 = 4
+  Drawing cumulative plot...
+    saved to /working-dir/rnaquast_test_out/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /working-dir/rnaquast_test_out/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /working-dir/rnaquast_test_out/aligned_stats/NGAx_plot.pdf
+Done.
+
+2016-05-18 21:57:58
+Running Genome analyzer...
+  Loaded 10 genes
+  Loaded 2 operons
+  1  contigs_1
+  2  contigs_2
+  2  Analysis is finished.
+  1  Analysis is finished.
+  Drawing genes cumulative plot...
+    saved to /working-dir/rnaquast_test_out/genome_stats/genes_cumulative_plot.pdf
+  Drawing # complete genes histogram...
+    saved to /working-dir/rnaquast_test_out/genome_stats/complete_genes_histogram.pdf
+  Drawing operons cumulative plot...
+    saved to /working-dir/rnaquast_test_out/genome_stats/operons_cumulative_plot.pdf
+  Drawing # complete operons histogram...
+    saved to /working-dir/rnaquast_test_out/genome_stats/complete_operons_histogram.pdf
+  Drawing Genome fraction, % histogram...
+    saved to /working-dir/rnaquast_test_out/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2016-05-18 21:57:59
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2016-05-18 21:58:02
+RESULTS:
+  Text versions of total report are saved to /working-dir/rnaquast_test_out/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /working-dir/rnaquast_test_out/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /working-dir/rnaquast_test_out/report.html
+  PDF version (tables and plots) is saved to /working-dir/rnaquast_test_out/report.pdf
+  Icarus (contig browser) is saved to /working-dir/rnaquast_test_out/icarus.html
+  Log saved to /working-dir/rnaquast_test_out/quast.log
+
+Finished: 2016-05-18 21:58:02
+Elapsed time: 0:00:42.647675
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

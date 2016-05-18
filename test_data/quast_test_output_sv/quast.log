@@ -1,0 +1,247 @@
+/quast-release_4.0/quast.py -o quast_test_output_sv -R reference.fasta.gz -O operons.gff -G genes.gff --gage  --gene-finding  --eukaryote  --glimmer  -1 reads1.fastq.gz -2 reads2.fastq.gz contigs_1.fasta contigs_2.fasta
+
+Version: 4.0
+
+System information:
+  OS: Linux-3.10.0-229.14.1.el7.x86_64-x86_64-with-Ubuntu-14.04-trusty (linux_64)
+  Python version: 2.7.6
+  CPUs number: 16
+
+Started: 2016-05-18 22:00:37
+
+Logging to /working-dir/quast_test_output_sv/quast.log
+
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+Main parameters: 
+  Threads: 4, eukaryotic: true, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  reference.fasta.gz ==> reference
+
+Contigs:
+  1  contigs_1.fasta ==> contigs_1
+  2  contigs_2.fasta ==> contigs_2
+
+2016-05-18 22:00:39
+Running Reads analyzer...
+Compiling Bowtie2 (details are in /quast-release_4.0/libs/bowtie2/make.log and make.err)
+make -C /quast-release_4.0/libs/bowtie2 > /quast-release_4.0/libs/bowtie2/make.log \
+2> /quast-release_4.0/libs/bowtie2/make.err
+  Downloading binary distribution of Manta...
+  Manta successfully downloaded!
+  Unpacking Manta...
+  Done
+  Logging to files /working-dir/quast_test_output_sv/structural_variations/sv_calling.log and /working-dir/quast_test_output_sv/structural_variations/sv_calling.err...
+  Pre-processing reads...
+  Logging to /working-dir/quast_test_output_sv/structural_variations/sv_calling.err...
+  Running Bowtie2...
+/quast-release_4.0/libs/bowtie2/bowtie2-build /working-dir/quast_test_output_sv/quast_corrected_input/reference.fasta \
+reference >> /working-dir/quast_test_output_sv/structural_variations/sv_calling.log \
+2>> /working-dir/quast_test_output_sv/structural_variations/sv_calling.err
+/quast-release_4.0/libs/bowtie2/bowtie2 -x reference -1 /working-dir/reads1.fastq.gz \
+-2 /working-dir/reads2.fastq.gz -S reference.sam --no-unal -a -p 4 >> /working-dir/quast_test_output_sv/structural_variations/sv_calling.log \
+2>> /working-dir/quast_test_output_sv/structural_variations/sv_calling.err
+  Done.
+  Sorting SAM-file...
+/quast-release_4.0/libs/samtools/samtools view -@ 4 -bS quast_test_output_sv/structural_variations/temp_output/reference.sam \
+> quast_test_output_sv/structural_variations/temp_output/reference.bam 2>> quast_test_output_sv/structural_variations/sv_calling.err
+/quast-release_4.0/libs/samtools/samtools sort -@ 4 quast_test_output_sv/structural_variations/temp_output/reference.bam \
+-o quast_test_output_sv/structural_variations/temp_output/reference.sorted.bam 2>> \
+quast_test_output_sv/structural_variations/sv_calling.err
+/quast-release_4.0/libs/samtools/samtools view -@ 4 quast_test_output_sv/structural_variations/temp_output/reference.sorted.bam \
+> quast_test_output_sv/structural_variations/temp_output/reference.sorted.sam 2>> \
+quast_test_output_sv/structural_variations/sv_calling.err
+  Preparing reads coverage file...
+/quast-release_4.0/libs/samtools/samtools depth -a quast_test_output_sv/structural_variations/temp_output/reference.sorted.bam \
+> quast_test_output_sv/structural_variations/reference.cov 2>> quast_test_output_sv/structural_variations/sv_calling.err
+  Looking for trivial deletions (long zero-covered fragments)...
+  Trivial deletions: 0 found
+    Saving to: /working-dir/quast_test_output_sv/structural_variations/temp_output/trivial_deletions.bed
+  Searching structural variations with Manta...
+/quast-release_4.0/libs/samtools/samtools index quast_test_output_sv/structural_variations/temp_output/reference.sorted.bam \
+2>> quast_test_output_sv/structural_variations/sv_calling.err
+/quast-release_4.0/libs/samtools/samtools faidx quast_test_output_sv/quast_corrected_input/reference.fasta \
+2>> quast_test_output_sv/structural_variations/sv_calling.err
+/quast-release_4.0/libs/manta/build/bin/configManta.py --normalBam quast_test_output_sv/structural_variations/temp_output/reference.sorted.bam \
+--referenceFasta quast_test_output_sv/quast_corrected_input/reference.fasta --runDir \
+quast_test_output_sv/structural_variations/temp_output/reference_manta >> quast_test_output_sv/structural_variations/sv_calling.err \
+2>> quast_test_output_sv/structural_variations/sv_calling.err
+quast_test_output_sv/structural_variations/temp_output/reference_manta/runWorkflow.py \
+-m local -j 4 2>> quast_test_output_sv/structural_variations/sv_calling.err
+gunzip -c quast_test_output_sv/structural_variations/temp_output/reference_manta/results/variants/diploidSV.vcf.gz \
+> quast_test_output_sv/structural_variations/temp_output/reference_manta/results/variants/diploidSV.vcf.gz.unpacked \
+2>> quast_test_output_sv/structural_variations/sv_calling.err
+    Saving to: /working-dir/quast_test_output_sv/structural_variations/temp_output/manta_sv.bed
+  No structural variations were found.
+  Coverage distribution along the reference genome is in /working-dir/quast_test_output_sv/structural_variations/reference.cov
+Done.
+
+2016-05-18 22:08:03
+Running GAGE...
+Compiling MUMmer (details are in /quast-release_4.0/libs/MUMmer3.23-linux/make.log and make.err)
+make -C /quast-release_4.0/libs/MUMmer3.23-linux > /quast-release_4.0/libs/MUMmer3.23-linux/make.log \
+2> /quast-release_4.0/libs/MUMmer3.23-linux/make.err
+Compiling JAVA classes (details are in /quast-release_4.0/libs/gage/make.log and make.err)
+javac Utils.java > make.log 2> make.err
+javac SizeFasta.java > make.log 2> make.err
+javac GetFastaStats.java > make.log 2> make.err
+  1  contigs_1...
+  1  Logging to files gage_contigs_1.stdout and gage_contigs_1.stderr...
+  2  sh /quast-release_4.0/libs/gage/getCorrectnessStats.sh quast_test_output_sv/quast_corrected_input/reference.fasta \
+     quast_test_output_sv/quast_corrected_input/contigs_2.fasta quast_test_output_sv/gage/tmp \
+     500 > quast_test_output_sv/gage/gage_contigs_2.stdout 2> quast_test_output_sv/gage/gage_contigs_2.stderr
+  1  sh /quast-release_4.0/libs/gage/getCorrectnessStats.sh quast_test_output_sv/quast_corrected_input/reference.fasta \
+     quast_test_output_sv/quast_corrected_input/contigs_1.fasta quast_test_output_sv/gage/tmp \
+     500 > quast_test_output_sv/gage/gage_contigs_1.stdout 2> quast_test_output_sv/gage/gage_contigs_1.stderr
+  2  Done.
+  Creating total report...
+    saved to /working-dir/quast_test_output_sv/gage_report.txt, gage_report.tsv, and gage_report.tex
+  Transposed version of total report...
+    saved to /working-dir/quast_test_output_sv/gage_transposed_report.txt, gage_transposed_report.tsv, and gage_transposed_report.tex
+Done.
+
+2016-05-18 22:08:41
+Running Basic statistics processor...
+  Reference genome:
+    reference.fasta, Reference length = 10000, Reference GC % = 52.07
+  Contig files: 
+    1  contigs_1
+    2  contigs_2
+  Calculating N50 and L50...
+    1  contigs_1, N50 = 3980, L50 = 1, Total length = 6710, GC % = 51.28, # N's per 100 kbp =  0.00
+    2  contigs_2, N50 = 3360, L50 = 1, Total length = 5460, GC % = 52.44, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /working-dir/quast_test_output_sv/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /working-dir/quast_test_output_sv/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /working-dir/quast_test_output_sv/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /working-dir/quast_test_output_sv/basic_stats/GC_content_plot.pdf
+Done.
+
+2016-05-18 22:08:42
+Running Contig analyzer...
+  2  contigs_2
+  2  Logging to files /working-dir/quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stdout and contigs_report_contigs_2.stderr...
+  2  Running Nucmer
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/nucmer -c 65 -l 65 --maxmatch -p quast_test_output_sv/contigs_reports/nucmer_output/contigs_1 \
+     quast_test_output_sv/quast_corrected_input/reference.fasta quast_test_output_sv/quast_corrected_input/contigs_1.fasta \
+     >> quast_test_output_sv/contigs_reports/contigs_report_contigs_1.stdout 2>> quast_test_output_sv/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/nucmer -c 65 -l 65 --maxmatch -p quast_test_output_sv/contigs_reports/nucmer_output/contigs_2 \
+     quast_test_output_sv/quast_corrected_input/reference.fasta quast_test_output_sv/quast_corrected_input/contigs_2.fasta \
+     >> quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stdout 2>> quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/delta-filter -i 95 -l 0 quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.delta \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.fdelta 2> quast_test_output_sv/contigs_reports/contigs_report_contigs_1.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/show-coords quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.delta \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.coords_tmp 2> \
+     quast_test_output_sv/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/delta-filter -i 95 -l 0 quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.delta \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.fdelta 2> quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stderr
+  1  /quast-release_4.0/libs/MUMmer3.23-linux/show-snps -S -T -H quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.delta \
+     < quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.coords.headless \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_1.all_snps 2> quast_test_output_sv/contigs_reports/contigs_report_contigs_1.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/show-coords quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.delta \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.coords_tmp 2> \
+     quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stderr
+  2  /quast-release_4.0/libs/MUMmer3.23-linux/show-snps -S -T -H quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.delta \
+     < quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.coords.headless \
+     > quast_test_output_sv/contigs_reports/nucmer_output/contigs_2.all_snps 2> quast_test_output_sv/contigs_reports/contigs_report_contigs_2.stderr
+  1  Alignments: quast_test_output_sv/contigs_reports/alignments_contigs_1.tsv
+  1  Analysis is finished.
+
+  2  Alignments: quast_test_output_sv/contigs_reports/alignments_contigs_2.tsv
+  2  Analysis is finished.
+
+  Creating total report...
+    saved to /working-dir/quast_test_output_sv/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /working-dir/quast_test_output_sv/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /working-dir/quast_test_output_sv/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /working-dir/quast_test_output_sv/contigs_reports/misassemblies_plot.pdf
+Done.
+
+2016-05-18 22:08:43
+Running NA-NGA calculation...
+  1  contigs_1, Largest alignment = 2030, NA50 = 1948, NGA50 = 1610, LA50 = 2, LGA50 = 3
+  2  contigs_2, Largest alignment = 2100, NA50 = 1470, NGA50 = 700, LA50 = 2, LGA50 = 4
+  Drawing cumulative plot...
+    saved to /working-dir/quast_test_output_sv/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /working-dir/quast_test_output_sv/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /working-dir/quast_test_output_sv/aligned_stats/NGAx_plot.pdf
+Done.
+
+2016-05-18 22:08:44
+Running Genome analyzer...
+  Loaded 10 genes
+  Loaded 2 operons
+  1  contigs_1
+  2  contigs_2
+  2  Analysis is finished.
+  1  Analysis is finished.
+  Drawing genes cumulative plot...
+    saved to /working-dir/quast_test_output_sv/genome_stats/genes_cumulative_plot.pdf
+  Drawing # complete genes histogram...
+    saved to /working-dir/quast_test_output_sv/genome_stats/complete_genes_histogram.pdf
+  Drawing operons cumulative plot...
+    saved to /working-dir/quast_test_output_sv/genome_stats/operons_cumulative_plot.pdf
+  Drawing # complete operons histogram...
+    saved to /working-dir/quast_test_output_sv/genome_stats/complete_operons_histogram.pdf
+  Drawing Genome fraction, % histogram...
+    saved to /working-dir/quast_test_output_sv/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+2016-05-18 22:08:45
+Running GlimmerHMM...
+Compiling GlimmerHMM...
+    make -C /quast-release_4.0/libs/glimmer/src > /quast-release_4.0/libs/glimmer/src/make.log \
+    2> /quast-release_4.0/libs/glimmer/src/make.err
+  1  contigs_1
+  2  contigs_2
+  1    /quast-release_4.0/libs/glimmer/glimmerhmm quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig1.fasta \
+       -d /quast-release_4.0/libs/glimmer/trained/arabidopsis -g -o quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig1.gff \
+       >> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr 2>> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr
+  2    /quast-release_4.0/libs/glimmer/glimmerhmm quast_test_output_sv/predicted_genes/tmp/tmp09m637/contig1.fasta \
+       -d /quast-release_4.0/libs/glimmer/trained/arabidopsis -g -o quast_test_output_sv/predicted_genes/tmp/tmp09m637/contig1.gff \
+       >> quast_test_output_sv/predicted_genes/contigs_2_glimmer.stderr 2>> quast_test_output_sv/predicted_genes/contigs_2_glimmer.stderr
+  1    /quast-release_4.0/libs/glimmer/glimmerhmm quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig2.fasta \
+       -d /quast-release_4.0/libs/glimmer/trained/arabidopsis -g -o quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig2.gff \
+       >> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr 2>> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr
+  2    /quast-release_4.0/libs/glimmer/glimmerhmm quast_test_output_sv/predicted_genes/tmp/tmp09m637/contig2.fasta \
+       -d /quast-release_4.0/libs/glimmer/trained/arabidopsis -g -o quast_test_output_sv/predicted_genes/tmp/tmp09m637/contig2.gff \
+       >> quast_test_output_sv/predicted_genes/contigs_2_glimmer.stderr 2>> quast_test_output_sv/predicted_genes/contigs_2_glimmer.stderr
+  1    /quast-release_4.0/libs/glimmer/glimmerhmm quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig3.fasta \
+       -d /quast-release_4.0/libs/glimmer/trained/arabidopsis -g -o quast_test_output_sv/predicted_genes/tmp/tmpQPJc87/contig3.gff \
+       >> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr 2>> quast_test_output_sv/predicted_genes/contigs_1_glimmer.stderr
+  2    Genes = 6 unique, 6 total
+  2    Predicted genes (GFF): /working-dir/quast_test_output_sv/predicted_genes/contigs_2_glimmer_genes.gff
+  1    Genes = 7 unique, 7 total
+  1    Predicted genes (GFF): /working-dir/quast_test_output_sv/predicted_genes/contigs_1_glimmer_genes.gff
+Done.
+
+2016-05-18 22:08:47
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2016-05-18 22:08:49
+RESULTS:
+  Text versions of total report are saved to /working-dir/quast_test_output_sv/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /working-dir/quast_test_output_sv/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /working-dir/quast_test_output_sv/report.html
+  PDF version (tables and plots) is saved to /working-dir/quast_test_output_sv/report.pdf
+  Icarus (contig browser) is saved to /working-dir/quast_test_output_sv/icarus.html
+  Log saved to /working-dir/quast_test_output_sv/quast.log
+
+Finished: 2016-05-18 22:08:49
+Elapsed time: 0:08:12.723507
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
