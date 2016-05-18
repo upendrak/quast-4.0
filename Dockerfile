@@ -32,3 +32,14 @@ RUN ./configure && make && make install
 # Specify entrypoint
 ENTRYPOINT ["/quast-release_4.0/quast.py"]
 CMD ["-h"]
+
+# Build the image
+# docker build -t"=ubuntu/quast-4.0" dockerfile-quast
+# Testing the image
+# Without any arguments
+# sudo docker run ubuntu/quast-4.0 -h
+# With arguments
+# sudo docker run --rm -v $(pwd):/working-dir -w /working-dir ubuntu/quast-4.0 contigs_1.fasta contigs_2.fasta -R reference.fasta.gz -O operons.txt -G genes.txt -o quast_test_out
+# SV calling
+# sudo docker run --rm -v $(pwd):/working-dir -w /working-dir ubuntu/quast-4.0 -o quast_test_output_sv -R reference.fasta.gz -O operons.gff -G genes.gff --gage  --gene-finding  --eukaryote  --glimmer  -1 reads1.fastq.gz -2 reads2.fastq.gz contigs_1.fasta contigs_2.fasta
+
